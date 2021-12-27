@@ -8,6 +8,7 @@
 <meta name="robots" content="index, follow">
 
 {{- block "favicon" . }}
+  {{/* PDW add .ico  */}}
   {{- if (fileExists "assets/image/favicon.ico") }}
     {{- $icon := resources.Get "image/favicon.ico" -}}
     <link rel="apple-touch-icon-precomposed" href="{{ $icon.RelPermalink }}" />
