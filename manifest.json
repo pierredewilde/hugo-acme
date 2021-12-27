@@ -1,0 +1,7 @@
+{
+  "name": "Acme Corporation",
+  "short_name": "Acme Corporation",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone"
+}
