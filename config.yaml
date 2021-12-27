@@ -26,13 +26,13 @@ params:
   copyright: Copyright © 2021, Acme Corporation. All Rights Reserved.
   footer:
     - title: About
-      content: >
+      content: "
       Acme Corporation is the world's leading
       manufacturer of digital shapes. From squares and
       circles to triangles and hexagons, we have it
       all. Browse through our collection of various
       forms with different thicknesses and line styles.
-      We shape the world. You live in it.
+      We shape the world. You live in it."
     - title: Recent Blog Posts
       recents: blog
       recentCount: 7
