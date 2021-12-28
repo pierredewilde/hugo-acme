@@ -18,12 +18,27 @@ ul, ol {
   padding: 0 0 0 5px;
 }
 
-footer {
-  background-color: #f8f8f8;
+blockquote:before {
+  font-family: _serif;
+  content: open-quote;
+  font-size: 4vw;
+  float: left;
 }
 
-#copyright, #copyright a {
-  color: var(--shade-color);
+blockquote p {
+  text-align: center;
+  font-size: 3vw;
+}
+
+blockquote:after {
+  font-family: _serif;
+  content: open-quote;
+  font-size: 4vw;
+  float: right;
+}
+
+footer {
+  background-color: #f8f8f8;
 }
 
 footer p, footer h2, footer li time {
@@ -31,9 +46,18 @@ footer p, footer h2, footer li time {
   background-color: #f8f8f8;
 }
 
+footer h2 {
+  margin-top: 10px;
+}
+
 footer div section p:hover {
   color: var(--hover-color);
 }
+
+#copyright, #copyright a {
+  color: var(--shade-color);
+}
+
 
 article ol li ul {
   padding-left: 30px;
@@ -51,10 +75,6 @@ a:hover {
 footer>* {
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-footer h2 {
-  margin-top: 10px!important;
 }
 
 .tags {

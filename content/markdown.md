@@ -84,6 +84,11 @@ let y = "World";
 let z = `${x}, ${y}!`
 ```
 
+{{< highlight html "linenos=table,hl_lines=3-5,linenostart=0" >}}
+{{</* youtube nLAVanlu5js */>}}
+{{< youtube nLAVanlu5js >}}
+{{</ highlight >}}
+
 ## Inline formatting
 
 *Italics*
