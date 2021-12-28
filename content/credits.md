@@ -1,4 +1,12 @@
-# Credits
+---
+title: Credits
+menu:
+  footer:
+    name: Credits
+    # weight: 5
+---
+
+<!-- # Credits -->
 
 This website uses resources from a variety of places. Here is to all of them:
 

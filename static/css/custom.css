@@ -1,7 +1,62 @@
-/*  PDW about us floating image without HTML tag */
-img[alt=drawing] { 
-  float: right;
-  margin: 5px 0 0 20px;
-  width: 300px; 
-  height: 200px;
+/* customize Eclectic theme */
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 4vw;
+  padding: 10px 0 20px 0;
+}
+
+:root {
+  --content-padding: 10px;
+}
+
+ul, ol {
+  padding: 0 0 0 5px;
+}
+
+footer {
+  background-color: #f8f8f8;
+}
+
+#copyright, #copyright a {
+  color: var(--shade-color);
+}
+
+footer p, footer h2, footer li time {
+  color: var(--hover-color);
+  background-color: #f8f8f8;
+}
+
+footer div section p:hover {
+  color: var(--hover-color);
+}
+
+article ol li ul {
+  padding-left: 30px;
+}
+
+p:hover, li:hover {
+  color: var(--text-color);  
+}
+
+a:hover {
+  text-decoration: underline dotted;
+  filter: brightness(100%);
+}
+
+footer>* {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer h2 {
+  margin-top: 10px!important;
+}
+
+.tags {
+  padding-bottom: 10px;
 }

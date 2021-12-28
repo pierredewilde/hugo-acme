@@ -1,0 +1,36 @@
+color: "#4f46e5" # warning: color must be quoted because of leading # == comment
+custom_css: [css/custom.css]
+copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reserved.
+description: >
+  Welcome to the
+  website of Acme Corporation, the leading creator
+  of digital shapes on the planet, providing
+  precise shape creations that are ready to use.
+footer:
+  - title: About
+    content: >
+      Acme Corporation is the world's leading
+      manufacturer of digital shapes. From squares and
+      circles to triangles and hexagons, we have it
+      all. Browse through our collection of various
+      forms with different thicknesses and line styles.
+      We shape the world. You live in it.
+  - title: Recent Posts
+    recents: blog
+    recentCount: 6
+  - title: Contact Us
+    contact: true
+  - title: Important Links
+    menu: true
+style: blue
+logo: /image/logo.png
+logo_small: /image/logo.png
+about_us: >
+  Acme Corporation is the world's leading manufacturer 
+  of digital shapes. From squares and circles to 
+  triangles and hexagons, we have it all. Browse through 
+  our collection of various forms with different 
+  thicknesses and line styles. We shape the world. 
+  You live in it.
+recent_posts:
+  enable: true

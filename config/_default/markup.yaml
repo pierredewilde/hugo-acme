@@ -1,0 +1,5 @@
+goldmark:
+  renderer:
+    unsafe: true # allow HTML in Markdown eg <mark>highlight</mark> <sup> <sub> <img>
+highlight:
+  lineNos: true # line numbers in ```code```

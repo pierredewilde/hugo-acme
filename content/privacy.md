@@ -1,4 +1,12 @@
-# Privacy Policy &#x1F512;
+---
+title: Privacy Policy
+menu:
+  footer:
+    name: Privacy Policy
+    # weight: 6
+---
+
+<!-- # Privacy Policy &#x1F512; -->
 
 *Last updated August 19, 2019*
 

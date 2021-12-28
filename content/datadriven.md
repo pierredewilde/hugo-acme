@@ -1,5 +1,5 @@
 ---
-title: Sample data driven page using eclectic.
+title: Sample data driven
 content:
   - type: carousel
     title: Shapes

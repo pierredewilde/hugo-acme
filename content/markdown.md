@@ -1,5 +1,8 @@
-Markdown Test
-=============
+---
+title: Markdown test
+---
+
+<!-- # Markdown Test -->
 
 I am a paragraph in markdown with line
 wrapping so fit in this width.
@@ -8,6 +11,7 @@ as there is no empty line before me.
 
 I am in the second paragraph.
 
+---
 
 I am the third one. Even though there are
 two line breaks before me, this does not
