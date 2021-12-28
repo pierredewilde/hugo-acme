@@ -18,10 +18,10 @@ We provide :smile: &nbsp;to hundreds of happy customers.
 At Acme Corporation, we take pride in what we create. Our manufacturing process goes through **3 different** stages of fine workmanship to give you the best possible shapes.
 
 <!-- unsafe -->
-<!-- <img src="./image/draw.jpg" style="float:right; margin:5px 0 0 20px;" width=300 height=200 alt="Drawing" title="Drawing"> -->
+<!-- <img src="../image/draw.jpg" style="float:right; margin:5px 0 0 20px;" width=300 height=200 alt="Drawing" title="Drawing"> -->
 
 <!-- safe -->
-![drawing](./image/draw.jpg "Drawing")
+![drawing](../image/draw.jpg "Drawing")
 
 1. **Drawing** - Our shapes are drawn with precision to 1/100 of a millimeter.
    * We use advanced vector drawing tools to create our catalog.

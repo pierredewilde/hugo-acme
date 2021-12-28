@@ -21,8 +21,9 @@
   }
 </style>
 {{- range .Site.Params.custom_css -}}
-  {{- $res = $res | append . }}
-  <link rel="stylesheet" href="{{ . }}">
+  {{ $css := . }}
+  {{- $res = $res | append (. | relURL) }}
+  <link rel="stylesheet" href="{{ . | relURL }}">
 {{- end -}}
 
 {{- $main := resources.Get "js/main.js" | resources.ExecuteAsTemplate "js/main.js" . -}}
