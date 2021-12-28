@@ -50,17 +50,35 @@ Also a # tag.
 Horizontal Lines:
 
 ------------------------------------
-.
-***********************************
-.
-***
-.
+<br/>
 
----
+***********************************  
+<br/>
+
+***  
+<br/>
+
+---  
+
+<br/>
+
+Line breaks with 2+ trailing spaces  
+
+Line 1  
+Line 2  
+Line 3
+
 
 > Block Quote
 
     Preformatted text
+<br/>
+
+```javascript {linenos=true,hl_lines=[2]}
+let x = "Hello";
+let y = "World";
+let z = `${x}, ${y}!`
+```
 
 ## Inline formatting
 

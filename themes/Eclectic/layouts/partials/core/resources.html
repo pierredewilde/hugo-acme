@@ -20,10 +20,10 @@
     opacity: 0;
   }
 </style>
-  {{- range .Site.Params.custom_css -}}
-    {{- $res = $res | append . }}
-<link rel="stylesheet" href="{{ . }}">
-  {{- end -}}
+{{- range .Site.Params.custom_css -}}
+  {{- $res = $res | append . }}
+  <link rel="stylesheet" href="{{ . }}">
+{{- end -}}
 
 {{- $main := resources.Get "js/main.js" | resources.ExecuteAsTemplate "js/main.js" . -}}
 {{- if .Site.IsServer }}

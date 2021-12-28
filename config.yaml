@@ -3,9 +3,10 @@ languageCode: en-us
 title: Acme Corporation
 theme: Eclectic
 author:
-  facebook: https://facebook.com/example
+  email: contact@example.org  
+  linkedin: https://linkedin.com/example
   twitter: https://twitter.com/example
-  email: contact@example.org
+  facebook: https://facebook.com/example
   name: Acme Corporation
   location: New York
   phone: (999) 999-9999
@@ -29,40 +30,40 @@ menu:
       url: /contact
       weight: 4
 params:
-  color: "#4f46e5"
-  copyright: Copyright &copy; 2021, Acme Corporation. All Rights Reserved.
+  color: "#4f46e5" # warning: color must be quoted because of leading # == comment
+  custom_css: [/css/custom.css]
+  copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reserved.
   footer:
     - title: About
-      content: "
+      content: >
         Acme Corporation is the world's leading
         manufacturer of digital shapes. From squares and
         circles to triangles and hexagons, we have it
         all. Browse through our collection of various
         forms with different thicknesses and line styles.
-        We shape the world. You live in it."
-    - title: Recent Blog Posts
+        We shape the world. You live in it.
+    - title: Recent Posts
       recents: blog
-      recentCount: 7
+      recentCount: 6
     - title: Contact Us
       contact: true
   style: blue
   logo: /image/logo.png
   logo_small: /image/logo.png
-  about_us: "
+  about_us: >
     Acme Corporation is the world's leading manufacturer 
     of digital shapes. From squares and circles to 
     triangles and hexagons, we have it all. Browse through 
     our collection of various forms with different 
     thicknesses and line styles. We shape the world. 
-    You live in it."
+    You live in it.
   recent_posts:
     enable: true
 markup:
   goldmark:
     renderer:
-      unsafe: true # allow HTML within Markdown eg <mark>highlight</mark>
+      unsafe: false # allow HTML within Markdown eg <mark>highlight</mark>
   highlight:
-    lineNos: true # line number in ```code```
+    lineNos: true # line numbers in ```code```
 enableEmoji: true # convert :emoji: 
-
 

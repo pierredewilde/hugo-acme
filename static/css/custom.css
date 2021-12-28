@@ -1,0 +1,7 @@
+/*  PDW about us floating image without HTML tag */
+img[alt=drawing] { 
+  float: right;
+  margin: 5px 0 0 20px;
+  width: 300px; 
+  height: 200px;
+}

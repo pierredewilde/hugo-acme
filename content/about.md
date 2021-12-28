@@ -1,3 +1,10 @@
+---
+title: About Us
+date: 2020-01-01T00:00:00Z
+description: World's leading manufacturer of digital shapes. We shape the world. You live in it.
+draft: false
+---
+
 # About Us &#x1F4AC;
 
 **_Acme Corporation&trade;_** is the world's leading manufacturer of digital shapes. From squares and circles to triangles and hexagons, we have it all. Browse through our collection of various forms with different thicknesses and line styles.
@@ -10,7 +17,11 @@ We provide :smile: &nbsp;to hundreds of happy customers.
 
 At Acme Corporation, we take pride in what we create. Our manufacturing process goes through **3 different** stages of fine workmanship to give you the best possible shapes.
 
-<img src="/image/draw.jpg" style="float:right; margin:5px 0 0 20px">
+<!-- unsafe -->
+<!-- <img src="/image/draw.jpg" style="float:right; margin:5px 0 0 20px;" width=300 height=200 alt="Drawing" title="Drawing"> -->
+
+<!-- safe -->
+![drawing](/image/draw.jpg "Drawing")
 
 1. **Drawing** - Our shapes are drawn with precision to 1/100 of a millimeter.
    * We use advanced vector drawing tools to create our catalog.
@@ -27,11 +38,15 @@ At Acme Corporation, we take pride in what we create. Our manufacturing process 
 
 We make over **_200 shapes_**. The most popular of these include:
 
-Shape | Design | Description | Link
-:----:|:------:|:------------|:-----
-Line | -- | Two pointy ends and a straight stretch of ink | [Line on Wikipedia](https://en.wikipedia.org/wiki/Line_(geometry))
-Circle | &#8413; | A full round with no corners | [Circle on Wikipedia](https://en.wikipedia.org/wiki/Circle)
-Triangle | &#9651; | Three lines with three corners | [Triangle on Wikipedia](https://en.wikipedia.org/wiki/Triangle)
+  Shape |  Design  | Description | Link
+:------:|:--------:|:------------|:-----
+Line    | &#x2500; | Two pointy ends and a straight stretch of ink | [Line on Wikipedia]
+Circle  | &#x25CB; | A full round with no corners | [Circle on Wikipedia]
+Triangle| &#x25B3; | Three lines with three corners | [Triangle on Wikipedia]
+
+[Line on Wikipedia]: https://en.wikipedia.org/wiki/Line_(geometry)
+[Circle on Wikipedia]: https://en.wikipedia.org/wiki/Circle
+[Triangle on Wikipedia]: https://en.wikipedia.org/wiki/Triangle
 
 ## Team
 
