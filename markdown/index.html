@@ -30,13 +30,14 @@ I am the third one. Even though there are two line breaks before me, this does n
 I have a line break before me.">
 <meta name=twitter:site content="@https://twitter.com/example">
 <meta name=twitter:creator content="@https://twitter.com/example">
-<script type=application/ld+json>{"headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/hugo-acme/image/logo.min.svg"},"name":"Acme Corporation"},"author":{"@type":"Person","name":"Acme Corporation"},"description":"Markdown Test I am a paragraph in markdown with line wrapping so fit in this width. I am a continuation of the first paragraph as there is no empty line before me.\nI am in the second paragraph.\nI am the third one. Even though there are two line breaks before me, this does not create any newline characters. After me there are two spaces before the newline character.\nI have a line break before me.","name":"Acme Corporation","@type":"Article","wordCount":218,"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/pierredewilde.github.io\/hugo-acme\/markdown\/"},"@context":"http://schema.org","url":"https://pierredewilde.github.io/hugo-acme/markdown/"}</script>
+<script type=application/ld+json>{"headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/hugo-acme/image/logo.min.svg"},"name":"Acme Corporation"},"author":{"@type":"Person","name":"Acme Corporation"},"description":"Markdown Test I am a paragraph in markdown with line wrapping so fit in this width. I am a continuation of the first paragraph as there is no empty line before me.\nI am in the second paragraph.\nI am the third one. Even though there are two line breaks before me, this does not create any newline characters. After me there are two spaces before the newline character.\nI have a line break before me.","name":"Acme Corporation","@type":"Article","wordCount":243,"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/pierredewilde.github.io\/hugo-acme\/markdown\/"},"@context":"http://schema.org","url":"https://pierredewilde.github.io/hugo-acme/markdown/"}</script>
 <link rel=preload href=/index.json as=fetch crossorigin importance=low>
 <link rel=stylesheet href=/hugo-acme/css/index.min.5fa0179c47e7c86b9b2f79f2506d698528ce7b2721e0838323532e415fe660b89e7d56e44845c38804c67567f4f377bffea0ccf349b3f358c504f0861392addf.css media=none onload="media!='all'&&(media='all')">
 <noscript>
 <link rel=stylesheet href=/hugo-acme/css/index.min.5fa0179c47e7c86b9b2f79f2506d698528ce7b2721e0838323532e415fe660b89e7d56e44845c38804c67567f4f377bffea0ccf349b3f358c504f0861392addf.css media=screen>
 </noscript>
 <style>html{opacity:0}</style>
+<link rel=stylesheet href=/css/custom.css>
 <script type=text/javascript src=/hugo-acme/index.min.js defer></script>
 <script>window.localStorage.color&&document.documentElement.style.setProperty("--theme-color",window.localStorage.color),window.localStorage.dark==="true"&&document.documentElement.classList.add("dark")</script>
 </head>
@@ -143,18 +144,31 @@ Also a # tag.</p>
 </ol>
 <p>Horizontal Lines:</p>
 <hr>
-<p>.</p>
 <hr>
-<p>.</p>
 <hr>
-<p>.</p>
 <hr>
+<p>Line breaks with 2+ trailing spaces</p>
+<p>Line 1<br>
+Line 2<br>
+Line 3</p>
 <blockquote>
 <p>Block Quote</p>
 </blockquote>
 <pre><code>Preformatted text
 </code></pre>
-<h2 id=inline-formatting>Inline formatting</h2>
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style=display:block;width:100%;background-color:#3c3d38><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span></span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>x</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Hello&#34;</span>;
+<span style=display:block;width:100%;background-color:#3c3d38><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>y</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;World&#34;</span>;
+</span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>z</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>`</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>x</span><span style=color:#e6db74>}</span><span style=color:#e6db74>, </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>y</span><span style=color:#e6db74>}</span><span style=color:#e6db74>!`</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=inline-formatting>Inline formatting</h2>
 <p><em>Italics</em></p>
 <p><em>Italics</em></p>
 <p><strong>Bold</strong></p>
@@ -181,7 +195,7 @@ Acme Corporation is the world&rsquo;s leading manufacturer of digital shapes. Fr
 </section>
 <section>
 <h2>
-Recent Blog Posts
+Recent Posts
 </h2>
 <ul>
 </ul>
@@ -197,6 +211,11 @@ Contact Us
 </a>
 </li>
 <li>
+<a target=_blank href=https://linkedin.com/example rel=noopener><svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M7.5 5C6.1309372 5 5 6.1309372 5 7.5v17C5 25.869063 6.1309372 27 7.5 27h17c1.369063.0 2.5-1.130937 2.5-2.5V7.5C27 6.1309372 25.869063 5 24.5 5H7.5zm0 2h17C24.786937 7 25 7.2130628 25 7.5v17C25 24.786937 24.786937 25 24.5 25H7.5C7.2130628 25 7 24.786937 7 24.5V7.5c0-.2869372.2130628-.5.5-.5zm2.9375 1.71875C9.4875 8.71875 8.71875 9.4885 8.71875 10.4375s.76775 1.71875 1.71875 1.71875c.948.0 1.71875-.76975 1.71875-1.71875.0-.948-.77075-1.71875-1.71875-1.71875zm9.03125 4.5625c-1.435.0-2.38725.78525-2.78125 1.53125H16.625V13.5H13.8125V23H16.75V18.3125c0-1.238.24625-2.4375 1.78125-2.4375 1.513.0 1.53125 1.399 1.53125 2.5V23H23V17.78125c0-2.556-.544250000000002-4.5-3.53125-4.5zM9 13.5V23h2.96875V13.5H9z"/></svg>
+<span>linkedin.com/example</span>
+</a>
+</li>
+<li>
 <a target=_blank href=https://twitter.com/example rel=noopener><svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M28 8.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.797-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.898-.957-2.178-1.555-3.594-1.555-2.719.0-4.924 2.205-4.924 4.924.0.386.044.762.127 1.122-4.092-.205-7.72-2.166-10.149-5.145C5.247 7.876 5.004 8.722 5.004 9.625c0 1.708.869 3.215 2.19 4.098-.807-.026-1.566-.247-2.23-.616.0.021.0.041.0.062.0 2.386 1.697 4.376 3.95 4.828C8.501 18.11 8.066 18.17 7.616 18.17c-.317.0-.626-.031-.926-.088.627 1.956 2.445 3.38 4.6 3.42-1.685 1.321-3.808 2.108-6.115 2.108-.397.0-.789-.023-1.175-.069 2.179 1.397 4.767 2.212 7.548 2.212 9.057.0 14.009-7.503 14.009-14.01.0-.213-.005-.426-.014-.637C26.505 10.411 27.34 9.544 28 8.557z"/></svg>
 <span>twitter.com/example</span>
 </a>
@@ -208,8 +227,8 @@ Contact Us
 </li>
 </ul>
 </section>
-</div><div id=copyright>Copyright © 2021, Acme Corporation. All Rights Reserved. <br>Last updated
-<time datetime=2021-12-27T23:26:07Z>Monday, Dec 27, 2021.</time> -
+</div><div id=copyright>Copyright © Acme Corporation™, 1990-2021. All Rights Reserved. <br>Last updated
+<time datetime=2021-12-28T09:48:05Z>Tuesday, Dec 28, 2021.</time> -
 Themed using <a href>Eclectic</a> by <a href=https://atishay.me>Atishay</a>
 </div>
 </footer>
