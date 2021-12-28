@@ -31,7 +31,7 @@ menu:
       weight: 4
 params:
   color: "#4f46e5" # warning: color must be quoted because of leading # == comment
-  custom_css: [/css/custom.css]
+  custom_css: [./css/custom.css]
   copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reserved.
   footer:
     - title: About
