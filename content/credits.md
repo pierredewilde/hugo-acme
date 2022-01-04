@@ -1,9 +1,5 @@
 ---
 title: Credits
-menu:
-  footer:
-    name: Credits
-    # weight: 5
 ---
 
 <!-- # Credits -->

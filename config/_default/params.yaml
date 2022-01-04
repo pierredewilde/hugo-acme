@@ -1,11 +1,8 @@
 color: "#4f46e5" # warning: color must be quoted because of leading # == comment
 custom_css: [css/custom.css]
+title: acme corporation
+subtitle: Shaping the ***world*** for you to **live in**
 copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reserved.
-description: >
-  Welcome to the
-  website of Acme Corporation, the leading creator
-  of digital shapes on the planet, providing
-  precise shape creations that are ready to use.
 footer:
   - title: About
     content: >

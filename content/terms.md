@@ -1,9 +1,5 @@
 ---
 title: Terms of Use
-menu:
-  footer:
-    name: Terms of Use
-    # weight: 7
 ---
 
 <!-- # Terms of Use &#x1F91D; -->

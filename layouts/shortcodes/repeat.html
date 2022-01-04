@@ -1,0 +1,7 @@
+{{- $count := default 3 (default (.Get 0) (.Get "count")) }}
+{{- if gt $count 0 }}
+  {{- $inner := .Inner | markdownify }}
+  {{- range seq $count }}
+    <div>{{ $inner }}</div>
+  {{- end }}
+{{- end }}

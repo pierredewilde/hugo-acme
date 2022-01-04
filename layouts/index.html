@@ -2,27 +2,116 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="{{ .Site.Params.description }}">
+    {{- with .Description }}<meta name="description" content="{{ . }}">{{ end -}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/index.css">
-    <title>{{ .Site.Title }}</title>
+    {{$title := default site.Title .Title}}
+    {{- with $title }}<title>{{ . }}</title>{{- end }}
   </head>
   <body class="home">
-    <section>
+
+    <header>
+      <a href="{{ site.BaseURL | relLangURL }}">
+        <img src="./image/logo.svg" alt="Acme Logo" height="36" width="48" />
+        Acme Corporation
+      </a>
+      {{- with site.Menus.main }}
+      <nav>
+        <button class="hamburger">&#9776;</button>
+        <ul>
+        {{- range . }}
+          <li><a href="{{ .URL }}">{{.Name | humanize}}</a></li>
+        {{- end }}
+        </ul>
+      </nav>
+      {{- end }}
+    </header>   
+
+    <section id="intro">
       <img src="./image/logo.svg" alt="Acme Logo" width="64"/>
-      <h1>{{ .Site.Title }}</h1>
-      <h2>Shaping the world for you to live in</h2>
-      <a href="./blog">Explore</a>
+      {{ with $title }}<h1>{{ . }}</h1>{{- end }}
+      {{ with .Param "subtitle" }}<h2>{{ . | humanize | markdownify }}</h2>{{- end }}
+      <a href="{{ relref . (.Param "explore") }}">Explore</a>
     </section>
-    <footer>
-      <a href="./about">About</a>
-      <a href="./blog">Blog</a>
-      <a href="./news">News</a>
-      <a href="./contact">Contact</a>
-      <a href="./credits">Credits</a>
-      <a href="./privacy">Privacy Policy</a>
-      <a href="./terms">Terms of Use</a>
+    <section id="description">
+      {{ .Content }}
+    </section>
+
+    {{- with resources.Get "data/products.csv" }}
+    <section id="products">
+      <h1>Our Products</h1>
+      {{- with . | transform.Unmarshal (dict "delimiter" ",") }}
+      <table>
+      {{- range $i, $value := . }}
+        {{ if eq $i 0 }}<thead>{{ end -}}
+        <tr>
+          {{- range $value }}
+          <td>{{ . }}</td>
+          {{- end }}
+        </tr>
+        {{- if eq $i 0 }}</thead>{{ end -}}
+      {{- end }}
+      </table>
+      {{- end }}
+      <a download href="{{.RelPermalink}}">Download listing</a>
+    </section>
+    {{- end }}
+
+    {{- with (where site.RegularPages ".Section" "in" site.Params.mainSections) }}
+    <section id="blog">
+      <h1>From our blog</h1>
+      <ul class="posts">
+      {{- range first 3 . }}
+        <li class="post" >
+          <a href="{{ .RelPermalink }}">
+            <h2>{{.Title}}</h2>
+            <article>{{.Summary}}</article>
+            <div>Read More</div>
+          </a>
+        </li>
+      {{- end }}
+      </ul>
+    </section>
+    {{- end }}
+
+    {{- with .Param "testimonials"  }}
+    <section id="testimonials">
+      <h1>Testimonials</h1>
+      <div>
+        <ol>
+        {{- range . }}
+          <li>
+            <p>{{ .content }}</p>
+            <div>
+              <h2>{{ .author }}</h2>
+              <h3>{{ .from }}</h3>
+            </div>
+          </li>
+        {{- end }}
+        </ol>
+      </div>
+    </section>
+    {{- end }}
+
+    <footer class="dark">
+      {{- with site.Menus.footer }}
+      <ul>
+      {{- range . }}
+        <li>
+          <a href="{{ .URL }}">{{.Name | humanize}}</a>
+        </li>
+      {{- end }}
+      </ul>
+      {{ end }}
+      <!-- <p>
+      {{- with site.Author.facebook }}<a href="{{ . }}" alt="Facebook"><i class="icon-facebook"></i></a>{{ end -}}
+      {{- with site.Author.twitter }}<a href="{{ . }}" alt="Twitter"><i class="icon-twitter"></i></a>{{- end -}}
+      {{- with site.Author.email }}<a href="mailto:{{ . }}" alt="Email"><i class="icon-email"></i></a>{{-  end -}}
+      </p> -->
+      <p style="font-size:.8rem">{{ .Param "copyright" | markdownify }}</p>
+      <p>{{- partial "hugo-logo" -}}</p>
     </footer>
+
   </body>
 </html>

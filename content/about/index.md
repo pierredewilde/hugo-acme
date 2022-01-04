@@ -2,13 +2,6 @@
 # title: About
 date: 2020-01-01T00:00:00Z
 description: World's leading manufacturer of digital shapes. We shape the world. You live in it.
-menu:
-  main:
-    name: About
-    # weight: 1
-  footer:
-    name: About
-    # weight: 1
 ---
 
 # About Acme &#x1F4AC; {style="font-family:cursive"}
@@ -25,16 +18,20 @@ We provide :smile: &nbsp;to hundreds of happy customers.
 
 {{< youtube nLAVanlu5js >}}
 
+{{< repeat 3 >}}
+Customer is our **_number 1_** priority.
+{{< /repeat >}}
+Nothing else.
+
 ## Manufacturing
 
 At Acme Corporation, we take pride in what we create. Our manufacturing process goes through **3 different** stages of fine workmanship to give you the best possible shapes.
 
 <!-- unsafe -->
-<!-- <img src="draw.jpg" style="float:right; margin:5px 0 0 20px;" width="300 height=200 alt="Drawing" title="Drawing"> -->
+<!-- <img src="draw.jpg" style="float:right; margin:5px 0 0 20px;" width=300 height=200 alt="Drawing" title="Drawing"> -->
 
-<!-- safe -->
-![drawing](draw.jpg){style="float:right; margin:5px 0 5px 20px; width:300; height:200;"}
----
+<!-- safe but style is applied to h2 container instead of img -->
+## ![drawing](draw.jpg){style="float:right; margin:5px 0 5px 20px;"}
 
 1. **Drawing** - Our shapes are drawn with precision to 1/100 of a millimeter.
    * We use advanced vector drawing tools to create our catalog.

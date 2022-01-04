@@ -1,12 +1,5 @@
 ---
 # title: Contact
-menu:
-  main:
-    name: Contact
-    # weight: 4
-  footer:
-    name: Contact
-    # weight: 4
 ---
 
 # Contact &#x270D;

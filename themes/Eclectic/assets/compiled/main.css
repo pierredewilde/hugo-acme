@@ -2035,7 +2035,7 @@ header {
 }
 
 .blog-post p {
-  flex: 1;
+  flex: 0; /* PDW was 1 */
 }
 
 .blog-post .blog-post-footer {

@@ -1380,14 +1380,20 @@ footer a:hover {
 .home #products table thead td:nth-of-type(3):before {
   content: "";
 }
-.home #products table td:first-child {
+.home  table td:first-child {
   font-weight: 700;
 }
 .home #products table td {
   padding: 1rem;
 }
 .home #products table td:nth-of-type(3):before {
-  content: "$ ";
+  content: "$";
+}
+.home #products table td:nth-of-type(3) {
+  text-align: center;
+}
+.home #products table td:nth-of-type(4) {
+  text-align: center;
 }
 .home #products table tr:nth-child(2n) {
   background-color: rgba(var(--red), var(--green), var(--blue), .1);
