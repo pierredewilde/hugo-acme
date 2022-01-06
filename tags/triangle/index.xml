@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>triangle on</title><link>https://pierredewilde.github.io/hugo-acme/tags/triangle/</link><description>Recent content in triangle on</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>contact@example.org (Acme Corporation)</managingEditor><webMaster>contact@example.org (Acme Corporation)</webMaster><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://pierredewilde.github.io/hugo-acme/tags/triangle/index.xml" rel="self" type="application/rss+xml"/><item><title>Tropical Triangles</title><link>https://pierredewilde.github.io/hugo-acme/blog/community/triangle/</link><pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate><author>contact@example.org (Acme Corporation)</author><guid>https://pierredewilde.github.io/hugo-acme/blog/community/triangle/</guid><description>&lt;h3 id="unit-price-hahahugoshortcode-s0-hbhb">Unit Price:
-$3&lt;/h3>
-&lt;p>A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry. A triangle with vertices A, B, and C is denoted △ ABC.&lt;/p></description></item><item><title>Our Manufacturing Process Part IV</title><link>https://pierredewilde.github.io/hugo-acme/blog/process-4/</link><pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate><author>contact@example.org (Acme Corporation)</author><guid>https://pierredewilde.github.io/hugo-acme/blog/process-4/</guid><description>A cutting tool has one or more sharp cutting edges and is made of a material that is harder than the work material. The cutting edge serves to separate chip from the parent work material. Connected to the cutting edge are the two surfaces of the tool:
-The rake face; and The flank. The rake face which directs the flow of newly formed chip, is oriented at a certain angle is called the rake angle &amp;ldquo;α&amp;rdquo;.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>triangle on </title>
+    <link>https://pierredewilde.github.io/hugo-acme/tags/triangle/</link>
+    <description>Recent content in triangle on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@example.org (Acme Corporation)</managingEditor>
+    <webMaster>contact@example.org (Acme Corporation)</webMaster>
+    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://pierredewilde.github.io/hugo-acme/tags/triangle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tropical Triangles</title>
+      <link>https://pierredewilde.github.io/hugo-acme/blog/community/triangle/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <author>contact@example.org (Acme Corporation)</author>
+      <guid>https://pierredewilde.github.io/hugo-acme/blog/community/triangle/</guid>
+      <description>&lt;h3 id=&#34;unit-price-hahahugoshortcode-s0-hbhb&#34;&gt;Unit Price: 
+      $3&lt;/h3&gt;
+&lt;p&gt;A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry. A triangle with vertices A, B, and C is denoted △ ABC.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Our Manufacturing Process Part IV</title>
+      <link>https://pierredewilde.github.io/hugo-acme/blog/process-4/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      <author>contact@example.org (Acme Corporation)</author>
+      <guid>https://pierredewilde.github.io/hugo-acme/blog/process-4/</guid>
+      <description>A cutting tool has one or more sharp cutting edges and is made of a material that is harder than the work material. The cutting edge serves to separate chip from the parent work material. Connected to the cutting edge are the two surfaces of the tool:
+ The rake face; and The flank.  The rake face which directs the flow of newly formed chip, is oriented at a certain angle is called the rake angle &amp;ldquo;α&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>
