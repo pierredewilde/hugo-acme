@@ -1,6 +1,18 @@
 {
   "name": "",
   "short_name": "",
+  
+  "icons": [{
+      "src": "/hugo-acme/image/favicon_hue010d4fad590a87d325b7e07b2e61f59_2460_192x192_resize_box_3.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/hugo-acme/image/favicon_hue010d4fad590a87d325b7e07b2e61f59_2460_512x512_resize_box_3.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
   "start_url": "/",
   "scope": "/",
   "theme_color": "#DC2626",

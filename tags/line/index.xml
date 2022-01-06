@@ -8,27 +8,14 @@
     <language>en-us</language>
     <managingEditor>contact@example.org (Acme Corporation)</managingEditor>
     <webMaster>contact@example.org (Acme Corporation)</webMaster>
-    <lastBuildDate>Tue, 04 Jan 2022 21:57:20 +0100</lastBuildDate><atom:link href="https://pierredewilde.github.io/hugo-acme/tags/line/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://pierredewilde.github.io/hugo-acme/tags/line/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Building Lines</title>
-      <link>https://pierredewilde.github.io/hugo-acme/blog/community/line/</link>
-      <pubDate>Tue, 04 Jan 2022 21:57:20 +0100</pubDate>
-      <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/blog/community/line/</guid>
-      <description>&lt;h3 id=&#34;unit-price-hahahugoshortcode-s0-hbhb&#34;&gt;Unit Price: 
-      $1&lt;/h3&gt;
-&lt;p&gt;In geometry, the notion of line or straight line was introduced by ancient mathematicians to represent straight objects (i.e., having no curvature) with negligible width and depth.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Building Curves</title>
+      <title>Curve</title>
       <link>https://pierredewilde.github.io/hugo-acme/blog/community/curve/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
       <guid>https://pierredewilde.github.io/hugo-acme/blog/community/curve/</guid>
-      <description>&lt;h3 id=&#34;unit-price-hahahugoshortcode-s0-hbhb&#34;&gt;Unit Price: 
-      $1&lt;/h3&gt;
-&lt;p&gt;In mathematics, a curve (also called a curved line in older texts) is, generally speaking, an object similar to a line but that need not be straight. Thus, a curve is a generalization of a line, in that it may be curved.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In mathematics, a curve (also called a curved line in older texts) is, generally speaking, an object similar to a line but that need not be straight. Thus, a curve is a generalization of a line, in that it may be curved.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -8,27 +8,14 @@
     <language>en-us</language>
     <managingEditor>contact@example.org (Acme Corporation)</managingEditor>
     <webMaster>contact@example.org (Acme Corporation)</webMaster>
-    <lastBuildDate>Tue, 04 Jan 2022 21:57:20 +0100</lastBuildDate><atom:link href="https://pierredewilde.github.io/hugo-acme/tags/shape/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://pierredewilde.github.io/hugo-acme/tags/shape/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Building Lines</title>
-      <link>https://pierredewilde.github.io/hugo-acme/blog/community/line/</link>
-      <pubDate>Tue, 04 Jan 2022 21:57:20 +0100</pubDate>
-      <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/blog/community/line/</guid>
-      <description>&lt;h3 id=&#34;unit-price-hahahugoshortcode-s0-hbhb&#34;&gt;Unit Price: 
-      $1&lt;/h3&gt;
-&lt;p&gt;In geometry, the notion of line or straight line was introduced by ancient mathematicians to represent straight objects (i.e., having no curvature) with negligible width and depth.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Building Circles</title>
+      <title>Circle</title>
       <link>https://pierredewilde.github.io/hugo-acme/blog/community/circle/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
       <guid>https://pierredewilde.github.io/hugo-acme/blog/community/circle/</guid>
-      <description>&lt;h3 id=&#34;unit-price-hahahugoshortcode-s0-hbhb&#34;&gt;Unit Price: 
-      $2&lt;/h3&gt;
-&lt;p&gt;A circle is a simple closed shape. It is the set of all points in a plane that are at a given distance from a given point, the centre; equivalently it is the curve traced out by a point that moves in a plane so that its distance from a given point is constant. The distance between any of the points and the centre is called the radius. This article is about circles in Euclidean geometry, and, in particular, the Euclidean plane, except where otherwise noted.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A circle is a simple closed shape. It is the set of all points in a plane that are at a given distance from a given point, the centre; equivalently it is the curve traced out by a point that moves in a plane so that its distance from a given point is constant. The distance between any of the points and the centre is called the radius. This article is about circles in Euclidean geometry, and, in particular, the Euclidean plane, except where otherwise noted.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,36 +39,30 @@ In particular, a license may be issued by authorities, to allow an activity that
     </item>
     
     <item>
-      <title>Building Curves</title>
+      <title>Curve</title>
       <link>https://pierredewilde.github.io/hugo-acme/blog/community/curve/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
       <guid>https://pierredewilde.github.io/hugo-acme/blog/community/curve/</guid>
-      <description>&lt;h3 id=&#34;unit-price-hahahugoshortcode-s0-hbhb&#34;&gt;Unit Price: 
-      $1&lt;/h3&gt;
-&lt;p&gt;In mathematics, a curve (also called a curved line in older texts) is, generally speaking, an object similar to a line but that need not be straight. Thus, a curve is a generalization of a line, in that it may be curved.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In mathematics, a curve (also called a curved line in older texts) is, generally speaking, an object similar to a line but that need not be straight. Thus, a curve is a generalization of a line, in that it may be curved.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Building Squares</title>
-      <link>https://pierredewilde.github.io/hugo-acme/blog/community/square/</link>
+      <link>https://pierredewilde.github.io/hugo-acme/blog/building-squares/</link>
       <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/blog/community/square/</guid>
-      <description>&lt;h3 id=&#34;unit-price-hahahugoshortcode-s0-hbhb&#34;&gt;Unit Price: 
-      $4&lt;/h3&gt;
-&lt;p&gt;In geometry, a square is a regular quadrilateral, which means that it has four equal sides and four equal angles (90-degree angles, or (100-gradian angles or right angles). It can also be defined as a rectangle in which two adjacent sides have equal length. A square with vertices ABCD would be denoted ◻ ABCD.&lt;/p&gt;</description>
+      <guid>https://pierredewilde.github.io/hugo-acme/blog/building-squares/</guid>
+      <description>&lt;p&gt;In geometry, a square is a regular quadrilateral, which means that it has four equal sides and four equal angles (90-degree angles, or (100-gradian angles or right angles). It can also be defined as a rectangle in which two adjacent sides have equal length. A square with vertices ABCD would be denoted ◻ ABCD.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tropical Triangles</title>
-      <link>https://pierredewilde.github.io/hugo-acme/blog/community/triangle/</link>
+      <link>https://pierredewilde.github.io/hugo-acme/blog/tropical-triangles/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/blog/community/triangle/</guid>
-      <description>&lt;h3 id=&#34;unit-price-hahahugoshortcode-s0-hbhb&#34;&gt;Unit Price: 
-      $3&lt;/h3&gt;
-&lt;p&gt;A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry. A triangle with vertices A, B, and C is denoted △ ABC.&lt;/p&gt;</description>
+      <guid>https://pierredewilde.github.io/hugo-acme/blog/tropical-triangles/</guid>
+      <description>&lt;p&gt;A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry. A triangle with vertices A, B, and C is denoted △ ABC.&lt;/p&gt;</description>
     </item>
     
   </channel>

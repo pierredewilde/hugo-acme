@@ -9,6 +9,24 @@
     <managingEditor>contact@example.org (Acme Corporation)</managingEditor>
     <webMaster>contact@example.org (Acme Corporation)</webMaster><atom:link href="https://pierredewilde.github.io/hugo-acme/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Building Squares</title>
+      <link>https://pierredewilde.github.io/hugo-acme/blog/building-squares/</link>
+      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
+      <author>contact@example.org (Acme Corporation)</author>
+      <guid>https://pierredewilde.github.io/hugo-acme/blog/building-squares/</guid>
+      <description>&lt;p&gt;In geometry, a square is a regular quadrilateral, which means that it has four equal sides and four equal angles (90-degree angles, or (100-gradian angles or right angles). It can also be defined as a rectangle in which two adjacent sides have equal length. A square with vertices ABCD would be denoted ◻ ABCD.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tropical Triangles</title>
+      <link>https://pierredewilde.github.io/hugo-acme/blog/tropical-triangles/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <author>contact@example.org (Acme Corporation)</author>
+      <guid>https://pierredewilde.github.io/hugo-acme/blog/tropical-triangles/</guid>
+      <description>&lt;p&gt;A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry. A triangle with vertices A, B, and C is denoted △ ABC.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Our Manufacturing Process Part IV</title>
       <link>https://pierredewilde.github.io/hugo-acme/blog/process-4/</link>
       <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>

@@ -13,17 +13,7 @@
     
     
     <item>
-<title>Building Lines</title>
-<link>https://pierredewilde.github.io/hugo-acme/blog/community/line/</link>
-<pubDate>Tue, 04 Jan 2022 21:57:20 +0100</pubDate>
-      <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/blog/community/line/</guid>
-<description></description>
-<category>Shape</category>
-<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pierredewilde.github.io/hugo-acme/blog/community/line/_cover_hu90472768be795e9656a8003eab7a04a7_25273_1024x512_fill_box_center_3.png" medium="image" width="1024" height="512"/></item>
-    
-    <item>
-<title>Building Circles</title>
+<title>Circle</title>
 <link>https://pierredewilde.github.io/hugo-acme/blog/community/circle/</link>
 <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
@@ -53,7 +43,7 @@
 <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pierredewilde.github.io/hugo-acme/news/square-license/cover_hu85a8847cb763f41bfb2cd932b6896f53_150202_1024x512_fill_q75_box_center.jpg" medium="image" width="1024" height="512"/></item>
     
     <item>
-<title>Building Curves</title>
+<title>Curve</title>
 <link>https://pierredewilde.github.io/hugo-acme/blog/community/curve/</link>
 <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
@@ -64,23 +54,23 @@
     
     <item>
 <title>Building Squares</title>
-<link>https://pierredewilde.github.io/hugo-acme/blog/community/square/</link>
+<link>https://pierredewilde.github.io/hugo-acme/blog/building-squares/</link>
 <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/blog/community/square/</guid>
+      <guid>https://pierredewilde.github.io/hugo-acme/blog/building-squares/</guid>
 <description></description>
 <category>Shape</category>
-<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pierredewilde.github.io/hugo-acme/blog/community/square/cover_hu4064c428c40635ae546609b14dff31bf_114454_1024x512_fill_q75_box_center.jpg" medium="image" width="1024" height="512"/></item>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pierredewilde.github.io/hugo-acme/blog/building-squares/cover_hu4064c428c40635ae546609b14dff31bf_114454_1024x512_fill_q75_box_center.jpg" medium="image" width="1024" height="512"/></item>
     
     <item>
 <title>Tropical Triangles</title>
-<link>https://pierredewilde.github.io/hugo-acme/blog/community/triangle/</link>
+<link>https://pierredewilde.github.io/hugo-acme/blog/tropical-triangles/</link>
 <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/blog/community/triangle/</guid>
+      <guid>https://pierredewilde.github.io/hugo-acme/blog/tropical-triangles/</guid>
 <description></description>
 <category>Shape</category>
-<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pierredewilde.github.io/hugo-acme/blog/community/triangle/cover_huef5e7652688d9849d0cbdbcd0cb50eea_257673_1024x512_fill_q75_box_center.jpg" medium="image" width="1024" height="512"/></item>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pierredewilde.github.io/hugo-acme/blog/tropical-triangles/cover_huef5e7652688d9849d0cbdbcd0cb50eea_257673_1024x512_fill_q75_box_center.jpg" medium="image" width="1024" height="512"/></item>
     
     <item>
 <title></title>

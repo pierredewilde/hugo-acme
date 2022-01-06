@@ -22,23 +22,11 @@ In particular, a license may be issued by authorities, to allow an activity that
     
     <item>
       <title>Building Squares</title>
-      <link>https://pierredewilde.github.io/hugo-acme/blog/community/square/</link>
+      <link>https://pierredewilde.github.io/hugo-acme/blog/building-squares/</link>
       <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/blog/community/square/</guid>
-      <description>&lt;h3 id=&#34;unit-price-hahahugoshortcode-s0-hbhb&#34;&gt;Unit Price: 
-      $4&lt;/h3&gt;
-&lt;p&gt;In geometry, a square is a regular quadrilateral, which means that it has four equal sides and four equal angles (90-degree angles, or (100-gradian angles or right angles). It can also be defined as a rectangle in which two adjacent sides have equal length. A square with vertices ABCD would be denoted ◻ ABCD.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Our Manufacturing Process Part II</title>
-      <link>https://pierredewilde.github.io/hugo-acme/blog/process-2/</link>
-      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
-      <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/blog/process-2/</guid>
-      <description>The three principal machining processes are classified as turning, drilling and milling. Other operations falling into miscellaneous categories include shaping, planing, boring, broaching and sawing.[5]
- Turning operations are operations that rotate the workpiece as the primary method of moving metal against the cutting tool. Lathes are the principal machine tool used in turning. Milling operations are operations in which the cutting tool rotates to bring cutting edges to bear against the workpiece.</description>
+      <guid>https://pierredewilde.github.io/hugo-acme/blog/building-squares/</guid>
+      <description>&lt;p&gt;In geometry, a square is a regular quadrilateral, which means that it has four equal sides and four equal angles (90-degree angles, or (100-gradian angles or right angles). It can also be defined as a rectangle in which two adjacent sides have equal length. A square with vertices ABCD would be denoted ◻ ABCD.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -8,20 +8,20 @@
     <language>en-us</language>
     <managingEditor>contact@example.org (Acme Corporation)</managingEditor>
     <webMaster>contact@example.org (Acme Corporation)</webMaster>
-    <lastBuildDate>Tue, 04 Jan 2022 21:57:20 +0100</lastBuildDate><atom:link href="https://pierredewilde.github.io/hugo-acme/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://pierredewilde.github.io/hugo-acme/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>line</title>
-      <link>https://pierredewilde.github.io/hugo-acme/tags/line/</link>
-      <pubDate>Tue, 04 Jan 2022 21:57:20 +0100</pubDate>
+      <title>circle</title>
+      <link>https://pierredewilde.github.io/hugo-acme/tags/circle/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/tags/line/</guid>
+      <guid>https://pierredewilde.github.io/hugo-acme/tags/circle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>product</title>
       <link>https://pierredewilde.github.io/hugo-acme/tags/product/</link>
-      <pubDate>Tue, 04 Jan 2022 21:57:20 +0100</pubDate>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
       <guid>https://pierredewilde.github.io/hugo-acme/tags/product/</guid>
       <description></description>
@@ -30,18 +30,9 @@
     <item>
       <title>shape</title>
       <link>https://pierredewilde.github.io/hugo-acme/tags/shape/</link>
-      <pubDate>Tue, 04 Jan 2022 21:57:20 +0100</pubDate>
-      <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/tags/shape/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>circle</title>
-      <link>https://pierredewilde.github.io/hugo-acme/tags/circle/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/tags/circle/</guid>
+      <guid>https://pierredewilde.github.io/hugo-acme/tags/shape/</guid>
       <description></description>
     </item>
     
@@ -69,6 +60,15 @@
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
       <guid>https://pierredewilde.github.io/hugo-acme/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>line</title>
+      <link>https://pierredewilde.github.io/hugo-acme/tags/line/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <author>contact@example.org (Acme Corporation)</author>
+      <guid>https://pierredewilde.github.io/hugo-acme/tags/line/</guid>
       <description></description>
     </item>
     

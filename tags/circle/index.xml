@@ -10,23 +10,21 @@
     <webMaster>contact@example.org (Acme Corporation)</webMaster>
     <lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://pierredewilde.github.io/hugo-acme/tags/circle/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Building Circles</title>
+      <title>Circle</title>
       <link>https://pierredewilde.github.io/hugo-acme/blog/community/circle/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
       <guid>https://pierredewilde.github.io/hugo-acme/blog/community/circle/</guid>
-      <description>&lt;h3 id=&#34;unit-price-hahahugoshortcode-s0-hbhb&#34;&gt;Unit Price: 
-      $2&lt;/h3&gt;
-&lt;p&gt;A circle is a simple closed shape. It is the set of all points in a plane that are at a given distance from a given point, the centre; equivalently it is the curve traced out by a point that moves in a plane so that its distance from a given point is constant. The distance between any of the points and the centre is called the radius. This article is about circles in Euclidean geometry, and, in particular, the Euclidean plane, except where otherwise noted.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A circle is a simple closed shape. It is the set of all points in a plane that are at a given distance from a given point, the centre; equivalently it is the curve traced out by a point that moves in a plane so that its distance from a given point is constant. The distance between any of the points and the centre is called the radius. This article is about circles in Euclidean geometry, and, in particular, the Euclidean plane, except where otherwise noted.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Our Manufacturing Process Part III</title>
-      <link>https://pierredewilde.github.io/hugo-acme/blog/process-3/</link>
-      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      <title>Our Manufacturing Process Part I</title>
+      <link>https://pierredewilde.github.io/hugo-acme/blog/process-1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
-      <guid>https://pierredewilde.github.io/hugo-acme/blog/process-3/</guid>
-      <description>Machining is any process in which a cutting tool is used to remove small chips of material from the workpiece (the workpiece is often called the &amp;ldquo;work&amp;rdquo;). To perform the operation, relative motion is required between the tool and the work. This relative motion is achieved in most machining operation by means of a primary motion, called &amp;ldquo;cutting speed&amp;rdquo; and a secondary motion called &amp;ldquo;feed&amp;rdquo;.[7] The shape of the tool and its penetration into the work surface, combined with these motions, produce the desired shape of the resulting work surface.</description>
+      <guid>https://pierredewilde.github.io/hugo-acme/blog/process-1/</guid>
+      <description>Machining is any of various processes in which a piece of raw material is cut into a desired final shape and size by a controlled material-removal process. The processes that have this common theme, controlled material removal, are today collectively known as subtractive manufacturing,[1] in distinction from processes of controlled material addition, which are known as additive manufacturing. Exactly what the &amp;ldquo;controlled&amp;rdquo; part of the definition implies can vary, but it almost always implies the use of machine tools (in addition to just power tools and hand tools).</description>
     </item>
     
   </channel>
