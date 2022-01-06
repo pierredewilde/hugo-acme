@@ -22,4 +22,6 @@ In modern mathematics, given the multitude of geometries, the concept of a line 
 
 When a geometry is described by a set of axioms, the notion of a line is usually left undefined (a so-called primitive object). The properties of lines are then determined by the axioms which refer to them. One advantage to this approach is the flexibility it gives to users of the geometry. Thus in differential geometry, a line may be interpreted as a geodesic (shortest path between points), while in some projective geometries, a line is a 2-dimensional vector space (all linear combinations of two independent vectors). This flexibility also extends beyond mathematics and, for example, permits physicists to think of the path of a light ray as being a line.
 
-Content from [Wikipedia](https://en.wikipedia.org/wiki/Line_(geometry))
+<br>
+
+Content from [Wikipedia.](https://en.wikipedia.org/wiki/Line_(geometry))

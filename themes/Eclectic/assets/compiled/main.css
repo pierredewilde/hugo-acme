@@ -3944,6 +3944,7 @@ header {
 
 .meta.content .banner {
   width: 100%;
+  height: auto; /* PDW */
 }
 
 .meta.content h1,

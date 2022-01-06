@@ -1,0 +1,1 @@
+{{ return (resources.Get "data/products.csv" | transform.Unmarshal (dict "delimiter" ",")) }}

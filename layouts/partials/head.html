@@ -1,0 +1,16 @@
+<head>
+  <meta charset="UTF-8">
+  {{- with .Description}}<meta name="description" content="{{.}}">{{end -}}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  {{ template "_internal/twitter_cards.html" . -}}
+  {{ template "_internal/opengraph.html" . -}}  
+  <link rel="icon" href="{{ `/favicon.ico` | relURL }}">
+  <!-- {{- $css := resources.GetMatch "css/index.css" | minify }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}"> -->
+  {{- $css := slice (resources.GetMatch "css/index.tpl.css") (resources.GetMatch "css/custom.css") | 
+              resources.Concat "index.css" |
+              resources.ExecuteAsTemplate "index.css" . | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{- $title := default site.Title .Title}}
+  {{- with $title}}<title>{{.}}</title>{{end -}}
+</head>

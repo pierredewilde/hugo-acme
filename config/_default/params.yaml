@@ -1,5 +1,5 @@
-color: "#4f46e5" # warning: color must be quoted because of leading # == comment
-custom_css: [css/custom.css]
+# color: "#4f46e5" # warning: color must be quoted (# == comment)
+color: "#DC2626"
 title: acme corporation
 subtitle: Shaping the ***world*** for you to **live in**
 copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reserved.
@@ -20,8 +20,8 @@ footer:
   - title: Important Links
     menu: true
 style: blue
-logo: /image/logo.png
-logo_small: /image/logo.png
+logo: assets/image/logo.svg
+logo_small: assets/image/logo.svg
 about_us: >
   Acme Corporation is the world's leading manufacturer 
   of digital shapes. From squares and circles to 

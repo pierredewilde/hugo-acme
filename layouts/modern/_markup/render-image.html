@@ -1,0 +1,10 @@
+<img loading="lazy" src="
+{{- with resources.GetMatch .Destination -}}
+{{- (.Resize `500x webp`).RelPermalink -}}
+{{- else -}}
+{{- .Destination | safeURL -}}
+{{- end -}}
+"
+alt="{{ .Text }}"
+{{- with .Title -}} title="{{.}}"{{- end -}}
+/>

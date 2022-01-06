@@ -37,4 +37,6 @@ Triangles can also be classified according to their internal angles, measured he
 * A triangle with an interior angle of 180° (and collinear vertices) is degenerate.
 * A right degenerate triangle has collinear vertices, two of which are coincident.
 
-Content from [Wikipedia](https://en.wikipedia.org/wiki/Triangle)
+<br/>
+
+Content from [Wikipedia.](https://en.wikipedia.org/wiki/Triangle)

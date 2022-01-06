@@ -48,4 +48,6 @@ All of the specified regions may be considered as open, that is, not containing 
     * Thought of as a great circle of the unit sphere, it becomes the Riemannian circle.
 * Through any three points, not all on the same line, there lies a unique circle. In Cartesian coordinates, it is possible to give explicit formulae for the coordinates of the centre of the circle and the radius in terms of the coordinates of the three given points. See circumcircle.
 
-Content from [Wikipedia](https://en.wikipedia.org/wiki/Circle).
+<br/>
+
+Content from [Wikipedia.](https://en.wikipedia.org/wiki/Circle)
