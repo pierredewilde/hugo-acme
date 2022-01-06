@@ -1,7 +1,7 @@
 ---
 title: Our Manufacturing Process Part IV
 date: 2019-01-04T00:00:00Z
-tags: [triangle, manufacturing]
+tags: [manufacturing]
 categories: [process]
 series: [manufacturing]
 ---

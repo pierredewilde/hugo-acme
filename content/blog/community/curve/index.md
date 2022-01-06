@@ -1,12 +1,10 @@
 ---
-title: Building Curves
+title: Curve
 date: 2021-11-01T00:00:00Z
-tags: [line, shape, product]
+tags: [line, shape]
 categories: [shape]
 series: [design]
 ---
-
-### Unit Price: {{< price "Line" >}} 
 
 In mathematics, a curve (also called a curved line in older texts) is, generally speaking, an object similar to a line but that need not be straight. Thus, a curve is a generalization of a line, in that it may be curved.
 
@@ -19,7 +17,5 @@ This definition of a curve has been formalized in modern mathematics as: A curve
 Nevertheless, the class of topological curves is very broad, and contains some curves that do not look as one may expect for a curve, or even cannot been drawn. This is the case of space-filling curves and fractal curves. For insuring more regularity, the function that defines a curve is often supposed to be differentiable, and the curve is then said a differentiable curve.
 
 A plane algebraic curve is the zero set of a polynomial in two indeterminates. More generally, an algebraic curve is the zero set of a finite set of polynomials, which satisfies the further condition of being an algebraic variety of dimension one. If the coefficients of the polynomials belong to a field k, the curve is said to be defined over k. In the common case of a real algebraic curve, where k is the field of real numbers, an algebraic curve is a finite union of topological curves. When complex zeros are considered, one has a complex algebraic curve, which, from the topologically point of view, is not a curve, but a surface, and is often called a Riemann surface. Although not being curves in the common sense, algebraic curves defined over other fields have been widely studied. In particular, algebraic curves over a finite field are widely used in modern cryptography. 
-
-<br>
 
 Content from [Wikipedia.](https://en.wikipedia.org/wiki/Curve)

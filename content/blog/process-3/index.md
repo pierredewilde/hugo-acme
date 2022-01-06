@@ -1,7 +1,7 @@
 ---
 title: Our Manufacturing Process Part III
 date: 2019-01-03T00:00:00Z
-tags: [circle, manufacturing]
+tags: [manufacturing]
 categories: [process]
 series: [manufacturing]
 ---

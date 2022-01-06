@@ -1,7 +1,7 @@
 ---
 title: Our Manufacturing Process Part I
 date: 2019-01-01T00:00:00Z
-tags: [line, manufacturing]
+tags: [line, circle, triangle, manufacturing]
 categories: [process]
 series: [manufacturing]
 ---

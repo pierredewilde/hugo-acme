@@ -49,7 +49,7 @@
             {{end}}
         </table>
       {{end}}
-      <a href="{{.Permalink}}" download>Download listing</a>
+      <a href="{{.RelPermalink}}" download>Download listing</a>
     </section>
     {{end}}
     <section id="description">
@@ -84,7 +84,7 @@
         <ul class="posts">
           {{range first 3 .}}
           <li class="post">
-            <a href="{{.Permalink}}">
+            <a href="{{.RelPermalink}}">
               <h2>
                 {{.Title}}
               </h2>

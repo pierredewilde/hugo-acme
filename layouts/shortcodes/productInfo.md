@@ -6,9 +6,9 @@ We make over **_200 shapes_**. The most popular of these include:
 [Circle]  | &#x25CB; | A full round with no corners | [Circle on Wikipedia]
 [Triangle]| &#x25B3; | Three lines with three corners | [Triangle on Wikipedia]
 
-[Line]: {{ "blog/community/curve" | relURL }}
+[Line]: {{ "blog/line" | relURL }}
 [Circle]: {{ "blog/community/circle" | relURL }}
-[Triangle]: {{ "blog/community/triangle" | relURL }}
+[Triangle]: {{ "blog/tropical-triangles" | relURL }}
 
 [Line on Wikipedia]: https://en.wikipedia.org/wiki/Line_(geometry)
 [Circle on Wikipedia]: https://en.wikipedia.org/wiki/Circle

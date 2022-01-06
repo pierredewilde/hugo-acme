@@ -1,2 +1,1 @@
-{{- $hero := resources.Get "image/hero.tpl.svg" | resources.ExecuteAsTemplate "hero.svg" . | minify }}
-<img class="hero" src="{{ $hero.RelPermalink }}" alt="Acme Hero" width=24rem />        
+<img class="hero" src="{{ partialCached `hero.svg` . }}" alt="{{ site.Params.Title }}" width="24rem" />        

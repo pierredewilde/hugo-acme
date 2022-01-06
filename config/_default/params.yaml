@@ -1,24 +1,24 @@
 # color: "#4f46e5" # warning: color must be quoted (# == comment)
 color: "#DC2626"
-title: acme corporation
+title: Acme Corporation
 subtitle: Shaping the ***world*** for you to **live in**
 copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reserved.
 footer:
-  - title: About
-    content: >
-      Acme Corporation is the world's leading
-      manufacturer of digital shapes. From squares and
-      circles to triangles and hexagons, we have it
-      all. Browse through our collection of various
-      forms with different thicknesses and line styles.
-      We shape the world. You live in it.
-  - title: Recent Posts
-    recents: blog
-    recentCount: 6
-  - title: Contact Us
-    contact: true
-  - title: Important Links
-    menu: true
+- title: About
+  content: >
+    Acme Corporation is the world's leading
+    manufacturer of digital shapes. From squares and
+    circles to triangles and hexagons, we have it
+    all. Browse through our collection of various
+    forms with different thicknesses and line styles.
+    We shape the world. You live in it.
+- title: Recent Posts
+  recents: blog
+  recentCount: 6
+- title: Contact Us
+  contact: true
+- title: Important Links
+  menu: true
 style: blue
 logo: assets/image/logo.svg
 logo_small: assets/image/logo.svg

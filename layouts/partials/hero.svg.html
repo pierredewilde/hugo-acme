@@ -1,0 +1,2 @@
+{{ $hero := resources.Get "image/hero.tpl.svg" | resources.ExecuteAsTemplate "hero.svg" . | minify }}
+{{ return $hero.RelPermalink }}

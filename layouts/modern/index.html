@@ -1,61 +1,43 @@
 {{ define "bodyClass" }}home{{ end }}
 {{ define "main" }}
-{{- $title := default site.Title .Title}}
+{{ $title := default site.Title .Title}}
 
 <section id="hero">
-  <!-- {{ partial "logo" . -}} -->
-  {{ partialCached "hero" . -}}
+  <!-- {{ partialCached "logo" . }} -->
+  {{ partialCached "hero" . }}
   <div class="intro">
-    {{ with $title }}<h1>{{ . }}</h1>{{- end }}
-    {{ with .Param "subtitle" }}<h2>{{ . | humanize | markdownify }}</h2>{{- end }}
-    <!-- <a href="{{ relref . (.Param "explore") }}">Explore</a> -->
-    <a href="{{ .Param "explore" }}">Explore</a>
-    {{ partialCached "menu" (dict "Menu" site.Menus.footer) "footer" -}}
+    {{ with $title }}<h1>{{ . }}</h1>{{ end }}
+    {{ with .Param "subtitle" }}<h2>{{ . | humanize | markdownify }}</h2>{{ end }}
+    <a href="{{ relref . (.Param "explore") }}">Explore</a>
+    {{ partialCached "menu" (dict "Menu" site.Menus.footer) "footer" }}
   </div>
 </section>
 
-<!-- {{- with (partialCached "products" .) }}
-<section id="products">
-  <h1>Our Products</h1>
-  <table>
-  {{- range $i, $value := . }}
-    {{ if eq $i 0 }}<thead>{{ end -}}
-    <tr>
-      {{- range $value }}
-      <td>{{ . }}</td>
-      {{- end }}
-    </tr>
-    {{- if eq $i 0 }}</thead>{{ end -}}
-  {{- end }}
-  </table>
-  <a download href="{{ (resources.Get `data/products.csv`).RelPermalink }}">Download listing</a>
-</section>
-{{- end }} -->
-
-{{ with (partialCached "products.html" .) }}
+{{ with (partialCached "products" .) }}
 <section id="store">
   <h1>Our Products</h1>
-  <ul>
-    {{ range $i, $value := . -}}
-    {{ if gt $i 0 -}}
-    {{ $name := index $value 0 -}}
-    {{ $price := index $value 2 -}}
-    {{ $rating := index $value 3 -}}
+  <ul class="posts">
+  {{ range $i, $value := . }}
+    {{ if gt $i 0 }}
+    {{ $name := index $value 0 }}
+    {{ $price := index $value 2 }}
+    {{ $rating := index $value 3 }}
+    {{ $post := index $value 4 }}
     <li>
-      <a href="{{ print `blog/community/` ($name | lower) }}">
-        {{ $img := resources.GetMatch (print "image/products/" $name ".*") | images.Filter (images.Overlay (resources.GetMatch "image/watermark.*") 0 0 ) -}}
-        {{ $img := $img.Resize "500x webp" -}}
+      <a href="{{ $post }}">
+        {{ $img := resources.GetMatch (print "image/products/" $name ".*") | images.Filter (images.Overlay (resources.GetMatch "image/watermark.*") 0 0 ) }}
+        {{ $img := $img.Resize "500x webp" }}
         <img src="{{$img.RelPermalink}}" alt="{{$name}}">
         <h2>{{$name}}</h2>
         <div class="price">$ {{$price}}</div>
         <div class="rating">
-        {{- range (seq $rating)}}&starf;{{end -}}
-        {{- range seq (sub 5 ($rating | int))}}&star;{{end -}}
+        {{ range (seq $rating)}}&starf;{{end }}
+        {{ range seq (sub 5 ($rating | int))}}&star;{{end }}
         </div>
       </a>
     </li>
-    {{ end -}}
-    {{ end -}}
+    {{ end }}
+  {{ end }}
   </ul>
 </section>
 {{end}}
@@ -64,33 +46,23 @@
   {{ .Content }}
 </section>
 
-{{- with (where site.RegularPages ".Section" "in" site.Params.mainSections) }}
+{{ with (where site.RegularPages ".Section" "in" site.Params.mainSections) }}
 <section id="blog">
   <h1>From our blog</h1>
   <ul class="posts">
-  {{- range first 3 . }}
-    <li class="post" >
-      <a href="{{ .RelPermalink }}">
-        {{$title :=  .Title}}
-        {{with (.Resources.GetMatch "cover.*")}}
-        <img src="{{ (.Resize `500x webp`).RelPermalink}}" alt="{{ $title }}" loading="lazy" />
-        {{end}}            
-        <h2>{{.Title}}</h2>
-        <article>{{.Summary}}</article>
-        <div>Read More</div>
-      </a>
-    </li>
-  {{- end }}
+  {{ range first 3 . }}
+    {{ partialCached "card" . .RelPermalink}}
+  {{ end }}
   </ul>
 </section>
-{{- end }}
+{{ end }}
 
-{{- with .Param "testimonials"  }}
+{{ with .Param "testimonials"  }}
 <section id="testimonials">
   <h1>Testimonials</h1>
   <div>
     <ol>
-    {{- range . }}
+    {{ range . }}
       <li>
         <p>{{ .content }}</p>
         <div>
@@ -98,10 +70,10 @@
           <h3>{{ .from }}</h3>
         </div>
       </li>
-    {{- end }}
+    {{ end }}
     </ol>
   </div>
 </section>
-{{- end }}
+{{ end }}
 
 {{ end }}

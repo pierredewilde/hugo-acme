@@ -1,0 +1,7 @@
+{{ $name := (print "blog/community/" ($ | lower)) }}
+{{ $name2 := (print "blog/" ($ | lower)) }}
+{{ if fileExists $name }}
+  {{ $name }}
+{{ else if fileExists $name2 }}
+  {{ $name2 }}
+{{ end }}

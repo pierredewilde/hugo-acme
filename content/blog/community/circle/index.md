@@ -1,12 +1,10 @@
 ---
-title: Building Circles
+title: Circle
 date: 2021-12-01T00:00:00Z
 tags: [circle, shape, product]
 categories: [shape]
 series: [design]
 ---
-
-### Unit Price: {{< price "Circle" >}} 
 
 A circle is a simple closed shape. It is the set of all points in a plane that are at a given distance from a given point, the centre; equivalently it is the curve traced out by a point that moves in a plane so that its distance from a given point is constant. The distance between any of the points and the centre is called the radius. This article is about circles in Euclidean geometry, and, in particular, the Euclidean plane, except where otherwise noted.
 
@@ -15,6 +13,10 @@ A circle is a simple closed shape. It is the set of all points in a plane that a
 A circle is a simple closed curve that divides the plane into two regions: an interior and an exterior. In everyday use, the term "circle" may be used interchangeably to refer to either the boundary of the figure, or to the whole figure including its interior; in strict technical usage, the circle is only the boundary and the whole figure is called a disc.
 
 A circle may also be defined as a special kind of ellipse in which the two foci are coincident and the eccentricity is 0, or the two-dimensional shape enclosing the most area per unit perimeter squared, using calculus of variations.
+
+## Price
+
+{{< price "Circle" >}}
 
 ## Terminology
 
@@ -47,7 +49,5 @@ All of the specified regions may be considered as open, that is, not containing 
 * The circle that is centred at the origin with radius 1 is called the unit circle.
     * Thought of as a great circle of the unit sphere, it becomes the Riemannian circle.
 * Through any three points, not all on the same line, there lies a unique circle. In Cartesian coordinates, it is possible to give explicit formulae for the coordinates of the centre of the circle and the radius in terms of the coordinates of the three given points. See circumcircle.
-
-<br/>
 
 Content from [Wikipedia.](https://en.wikipedia.org/wiki/Circle)

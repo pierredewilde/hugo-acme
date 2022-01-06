@@ -1,9 +1,2 @@
-{{- $product := default (.Get 0) (.Get "product") }}
-{{- if $product }}
-  {{- $products := partialCached "products" . }}
-  {{- range $r := $products }}
-    {{- if eq (index $r 0) $product }}
-      ${{- trim (index $r 2) " " }}
-    {{- end }}
-  {{- end }}
-{{- end }}
+{{ $product := default (.Get 0) (.Get "product") }}
+The {{ $product | lower }} is priced at <b>{{partial "price" $product}}</b> per unit.

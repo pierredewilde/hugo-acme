@@ -1,0 +1,2 @@
+{{ $logo := resources.Get "image/logo.tpl.svg" | resources.ExecuteAsTemplate "logo.svg" . | minify }}
+{{ return $logo.RelPermalink }}

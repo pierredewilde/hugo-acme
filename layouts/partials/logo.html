@@ -1,4 +1,4 @@
 <a href="{{ site.BaseURL | relLangURL }}">
-  {{- $logo := resources.Get "image/logo.tpl.svg" | resources.ExecuteAsTemplate "logo.svg" . | minify }}
-  <img src="{{ $logo.RelPermalink }}" alt="Acme Logo" height=48 width=48 />        
+  <img src="{{ partialCached "logo.svg" . }}" alt="Acme Logo" height=48 width=48 />
+  {{ site.Params.title }}     
 </a>
