@@ -79,6 +79,7 @@ footer>* {
   padding-bottom: 10px;
 }
 
+/* 
 #hero {
   flex-direction: column;
   justify-content: space-evenly;
@@ -179,6 +180,7 @@ footer>* {
     width: 24rem;
   }
 }
+*/
 
 #related {
   margin: 0;

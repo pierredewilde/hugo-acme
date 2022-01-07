@@ -73,7 +73,7 @@
 <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pierredewilde.github.io/hugo-acme/blog/tropical-triangles/cover_huef5e7652688d9849d0cbdbcd0cb50eea_257673_1024x512_fill_q75_box_center.jpg" medium="image" width="1024" height="512"/></item>
     
     <item>
-<title></title>
+<title>About</title>
 <link>https://pierredewilde.github.io/hugo-acme/about/</link>
 <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
@@ -122,7 +122,7 @@
 <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pierredewilde.github.io/hugo-acme/blog/process-1/cover_hueae9bd337787402574329f62eac761c7_306420_1024x512_fill_q75_box_center.jpg" medium="image" width="1024" height="512"/></item>
     
     <item>
-<title></title>
+<title>Contact</title>
 <link>https://pierredewilde.github.io/hugo-acme/contact/</link>
 <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@example.org (Acme Corporation)</author>
