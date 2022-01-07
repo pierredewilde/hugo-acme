@@ -1,10 +1,10 @@
 ---
-# title: About
+title: About
 date: 2020-01-01T00:00:00Z
 description: World's leading manufacturer of digital shapes. We shape the world. You live in it.
 ---
 
-# About Acme &#x1F4AC; {style="font-family:cursive"}
+<!-- # About Acme &#x1F4AC; {style="font-family:cursive"} -->
 
 **_Acme Corporation&trade;_** is the world's leading manufacturer of digital shapes. From squares and circles to triangles and hexagons, we have it all. Browse through our collection of various forms with different thicknesses and line styles.
 

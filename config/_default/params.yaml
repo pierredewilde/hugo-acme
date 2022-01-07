@@ -1,5 +1,6 @@
 # color: "#4f46e5" # warning: color must be quoted (# == comment)
 color: "#DC2626"
+# color: "#008080"
 title: Acme Corporation
 subtitle: Shaping the ***world*** for you to **live in**
 copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reserved.

@@ -8,6 +8,6 @@
   <link rel="icon" type="image/png" href="{{partialCached `favicon.png` .}}">
   <link rel="stylesheet" href="{{partialCached `index.css` .}}">
   <link rel="stylesheet" href="{{`css/custom.css` | relURL}}">
-  {{- $title := default site.Title .Title}}
-  {{- with $title}}<title>{{.}}</title>{{end -}}
+  {{ $title := print .Title (cond (eq .Title site.Params.title) ("") (print " | " site.Params.title)) }}
+  <title>{{$title}}</title>
 </head>

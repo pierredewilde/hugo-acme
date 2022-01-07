@@ -1,10 +1,10 @@
 ---
-title: The Acme Blog
+title: Blog
 cascade:
   - _target:
       kind: page
-    layout: blog
     type: modern
+    layout: blog
 ---
 
 Curated content about our teams and products.
