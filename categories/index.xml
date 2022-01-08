@@ -27,6 +27,24 @@
     </item>
     
     <item>
+      <title>square</title>
+      <link>https://pierredewilde.github.io/hugo-acme/categories/square/</link>
+      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
+      <author>contact@example.org (Acme Corporation)</author>
+      <guid>https://pierredewilde.github.io/hugo-acme/categories/square/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>triangle</title>
+      <link>https://pierredewilde.github.io/hugo-acme/categories/triangle/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <author>contact@example.org (Acme Corporation)</author>
+      <guid>https://pierredewilde.github.io/hugo-acme/categories/triangle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>process</title>
       <link>https://pierredewilde.github.io/hugo-acme/categories/process/</link>
       <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
