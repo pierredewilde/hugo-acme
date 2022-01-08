@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head" . }}
+  <body class="{{ block `bodyClass` . }}{{ end }}">
+    {{ block "header" . }}
+    <header>
+      {{ partialCached "logo" . }}
+      {{ partialCached "menu" (dict "menu" site.Menus.main "button" true) "main" }}
+    </header>
+    {{ end }}
+    {{ block "main" . }}
+    <main>
+      <h1>{{ partial "capitalize" .Title }}</h1>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </main>
+    {{ end }}
+    {{ block "footer" . }}
+    <footer class="dark">
+      {{ partialCached "menu" (dict "menu" site.Menus.footer "button" false) "footer" }}
+      {{ partialCached "social" . }}
+      {{ partialCached "copyright" . }}
+      {{ partialCached "hugo" . }}
+    </footer>
+    {{ end }}
+  </body>
+</html>

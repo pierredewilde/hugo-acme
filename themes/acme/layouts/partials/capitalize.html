@@ -1,0 +1,4 @@
+{{ $name := split $ " " }}
+{{ range $name }}
+  {{ . | humanize }}
+{{ end }}

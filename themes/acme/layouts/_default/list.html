@@ -1,0 +1,23 @@
+{{define "bodyClass"}}page list{{end}}
+{{define "main"}}
+<main>
+  <h1>{{partial "capitalize" .Title}}</h1>
+  <center>{{.Content}}</center>
+  {{$pages := .RegularPages}}
+  {{range .Sections}}
+    {{$pages = append $pages .RegularPages}}
+  {{end}}
+  {{$pages = sort $pages "Date" "desc" }}
+  {{$paginator := .Paginate $pages}}
+  {{with $paginator.Pages}}
+  <ul class="posts">
+    {{range .}}
+      {{/*  {{partialCached "card.html" . .RelPermalink}}  */}}
+      {{.Render "card"}}
+    {{end}}
+  </ul>
+  {{end}}
+  {{/*  {{ template "_internal/pagination.html" (dict "page" . "format" "terse") }}  */}}
+  {{ template "_internal/pagination.html" (dict "page" .) }}
+</main>
+{{end}}

@@ -1,7 +1,5 @@
 ---
 title: Privacy Policy
-type: modern
-toc: true
 ---
 
 <!-- # Privacy Policy &#x1F512; -->

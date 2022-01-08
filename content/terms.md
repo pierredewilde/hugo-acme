@@ -1,6 +1,5 @@
 ---
 title: Terms of Use
-type: modern
 toc: true
 ---
 

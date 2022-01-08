@@ -2,7 +2,7 @@
 title: Tropical Triangles
 date: 2021-09-01T00:00:00Z
 tags: [triangle, shape, product]
-categories: [shape]
+categories: [shape, triangle]
 series: [design]
 ---
 

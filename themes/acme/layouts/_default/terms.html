@@ -1,0 +1,14 @@
+{{define "bodyClass"}}page terms{{end}}
+{{define "main"}}
+<main>
+  <h1>{{partial "capitalize" .Title}}</h1>
+  <center>{{.Content}}</center>
+  {{with .Data.Terms.Alphabetical}}
+    <ul class="subsections">
+    {{ range .}}
+      {{partialCached "subsection" .Page .Page.RelPermalink}}
+    {{ end }}
+    </ul>
+  {{end}}
+</main>
+{{end}}

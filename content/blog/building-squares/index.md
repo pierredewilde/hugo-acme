@@ -2,7 +2,7 @@
 title: Building Squares
 date: 2021-10-01T00:00:00Z
 tags: [square, shape, product]
-categories: [shape]
+categories: [shape, square]
 series: [design]
 ---
 

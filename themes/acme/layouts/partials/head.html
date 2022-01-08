@@ -1,0 +1,16 @@
+<head>
+  <meta charset="UTF-8">
+  {{ with default .Summary .Description}}<meta name="description" content="{{.}}">{{ end }}  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  {{ template "_internal/twitter_cards.html" . -}}
+  {{ template "_internal/opengraph.html" . -}}  
+  {{/* <link rel="icon" href="{{ `/favicon.ico` | relURL }}"> */}}
+  <link rel="icon" type="image/png" href="{{partialCached `favicon.png` .}}">
+  <link rel="stylesheet" href="{{partialCached `index.css` .}}">
+  <link rel="stylesheet" href="{{`css/custom.css` | relURL}}">
+  {{ $title := partial "capitalize" .Title }}
+  {{ if (ne .Title site.Params.title) }}
+  {{ $title := (print $title " | " (partial "capitalize" site.Params.title)) }}
+  {{ end }}
+  <title>{{$title}}</title>
+</head>

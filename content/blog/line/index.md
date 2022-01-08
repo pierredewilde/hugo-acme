@@ -3,7 +3,7 @@ title: Line
 date: 2022-01-04T21:57:20+01:00
 draft: true
 tags: [line, shape, product]
-categories: [shape]
+categories: [shape, line]
 series: [design]
 ---
 

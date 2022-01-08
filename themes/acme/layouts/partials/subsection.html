@@ -1,0 +1,15 @@
+<li class="subsection">
+  <a href="{{.RelPermalink}}">
+  {{if .Title}}
+    <h3>{{partial "capitalize" .Title}}</h3>
+  {{else if .File}}
+    <h3>{{partial "capitalize" (.File.Path | path.Dir | path.Base)}}</h3>
+  {{end}}
+    <p>Pages: {{len .Pages}}</p>
+    {{$words:= 0}}
+    {{range .Pages}}
+      {{$words = add $words .WordCount}}
+    {{end}}
+    <p>Words: {{$words}}</p>
+  </a>
+</li>

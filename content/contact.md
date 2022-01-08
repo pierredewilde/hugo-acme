@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Contact us
 ---
 
 <!-- # Contact &#x270D; -->

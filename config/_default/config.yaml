@@ -1,6 +1,6 @@
 baseURL: /
 languageCode: en-us
-theme: Eclectic
+theme: acme
 enableEmoji: true # convert :emoji: 
 enableGitInfo: true
-
+Paginate: 3

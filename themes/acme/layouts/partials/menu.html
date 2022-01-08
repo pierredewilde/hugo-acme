@@ -1,0 +1,19 @@
+{{- with $.menu }}
+<nav>
+  {{ with $.button }}<button class="hamburger">&#9776;</button>{{ end -}}
+  <ul>
+  {{- range $.menu }}
+    <li>
+      <a href="{{.URL}}">{{partial "capitalize" .Name}}</a>
+      {{- if .HasChildren }}
+      <ul>
+      {{- range .Children }}
+        <li><a href="{{.URL}}">{{partial "capitalize" .Name}}</a></li>
+      {{- end }}
+      </ul>
+      {{- end }}
+    </li>
+  {{- end }}
+  </ul>
+</nav>
+{{- end -}}
