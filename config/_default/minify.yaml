@@ -1,0 +1,4 @@
+minifyOutput: false
+tdewolff:
+  html:
+    keepWhitespace: false

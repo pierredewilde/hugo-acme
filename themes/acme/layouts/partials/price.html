@@ -1,6 +1,6 @@
-{{ $products := partialCached "products" . }}
-{{ range $r := $products }}
-  {{ if eq (index $r 0) $ }}
-    ${{trim (index $r 2) " "}}
-  {{ end }}
-{{ end }}
+{{- $products := partialCached "products" . }}
+{{- range $r := $products }}
+  {{- if eq (index $r 0) $ }}
+    ${{- trim (index $r 2) " " }}
+  {{- end }}
+{{- end }}

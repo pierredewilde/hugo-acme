@@ -1,6 +1,7 @@
 baseURL: /
+relativeURLs: true
 languageCode: en-us
-theme: acme
 enableEmoji: true # convert :emoji: 
 enableGitInfo: true
-Paginate: 3
+paginate: 3
+theme: Acme

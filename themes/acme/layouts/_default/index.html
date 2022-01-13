@@ -12,57 +12,57 @@
   </div>
 </section>
 
-{{ with (partialCached "products" .) }}
+{{- with (partialCached "products" .) }}
 <section id="store">
   <h1>Our Products</h1>
   <ul class="posts">
-  {{ range $i, $value := . }}
-    {{ if gt $i 0 }}
-    {{ $name := index $value 0 }}
-    {{ $price := index $value 2 }}
-    {{ $rating := index $value 3 }}
-    {{ $post := index $value 4 }}
+  {{- range $i, $value := . }}
+  {{- if gt $i 0 }}
+    {{- $name := index $value 0 }}
+    {{- $price := index $value 2 }}
+    {{- $rating := index $value 3 }}
+    {{- $post := index $value 4 }}
     <li>
       <a href="{{ $post }}">
-        {{ $img := resources.GetMatch (print "image/products/" $name ".*") | images.Filter (images.Overlay (resources.GetMatch "image/watermark.*") 0 0 ) }}
-        {{ $img := $img.Resize "500x webp" }}
+        {{- $img := resources.GetMatch (print "image/products/" $name ".*") | images.Filter (images.Overlay (resources.GetMatch "image/watermark.*") 0 0 ) }}
+        {{- $img := $img.Resize "500x webp" }}
         <img src="{{$img.RelPermalink}}" alt="{{$name}}">
         <h2>{{$name}}</h2>
         <div class="price">$ {{$price}}</div>
         <div class="rating">
-        {{ range (seq $rating)}}&starf;{{end }}
-        {{ range seq (sub 5 ($rating | int))}}&star;{{end }}
+        {{- range (seq $rating)}}&starf;{{ end -}}
+        {{- range seq (sub 5 ($rating | int))}}&star;{{ end -}}
         </div>
       </a>
     </li>
-    {{ end }}
-  {{ end }}
+  {{ end -}}
+  {{ end -}}
   </ul>
 </section>
-{{end}}
+{{ end -}}
 
 <section id="description">
   {{ .Content }}
 </section>
 
-{{ with (where site.RegularPages ".Section" "in" site.Params.mainSections) }}
+{{- with (where site.RegularPages ".Section" "in" site.Params.mainSections) }}
 <section id="blog">
   <h1>From our blog</h1>
   <ul class="posts">
-  {{ range first 3 . }}
+  {{- range first 3 . }}
     {{/*  {{partialCached "card.html" . .RelPermalink}}  */}}
-    {{.Render "card"}}
-  {{ end }}
+    {{- .Render "card" -}}
+  {{ end -}}
   </ul>
 </section>
-{{ end }}
+{{ end -}}
 
-{{ with .Param "testimonials"  }}
+{{- with .Param "testimonials"  }}
 <section id="testimonials">
   <h1>Testimonials</h1>
   <div>
     <ol>
-    {{ range . }}
+    {{- range . }}
       <li>
         <p>{{ .content }}</p>
         <div>
@@ -70,10 +70,10 @@
           <h3>{{ .from }}</h3>
         </div>
       </li>
-    {{ end }}
+    {{ end -}}
     </ol>
   </div>
 </section>
-{{ end }}
+{{ end -}}
 
-{{ end }}
+{{ end -}}

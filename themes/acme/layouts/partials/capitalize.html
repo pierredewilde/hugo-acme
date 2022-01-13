@@ -1,4 +1,2 @@
-{{ $name := split $ " " }}
-{{ range $name }}
-  {{ . | humanize }}
-{{ end }}
+{{ $words := split $ " " }}
+{{- range $words }}{{ print (. | humanize) " " }}{{ end -}}

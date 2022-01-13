@@ -1,56 +1,48 @@
-{{define "bodyClass"}}page {{.Section}}{{end}}
-{{define "main"}}
+{{- define "bodyClass" }}page {{ .Section }}{{- end }}
+{{- define "main" }}
 <div id="content">
   <main>
-    {{$img := .Resources.GetMatch "cover.*"}}
-    {{ if $img }}
-    <img alt="{{.Title}}" width="1920" height="400" loading="lazy" src="{{($img.Fill "1920x400 webp").RelPermalink}}">
-    {{ end }}
-    {{with .Title}}<h1>{{.}}</h1>{{end}}
-    {{if .Param "toc"}}
+    {{- $img := .Resources.GetMatch "cover.*" }}
+    {{- if $img }}
+    <img alt="{{ .Title }}" width="1920" height="400" loading="lazy" src="{{ ($img.Fill `1920x400 webp`).RelPermalink }}">
+    {{- end }}
+    {{- with .Title }}<h1>{{ . }}</h1>{{- end }}
+    {{- if .Param "toc" }}
       <h2>Table of Contents</h2>
-      {{.TableOfContents}}
-    {{end}}
+      {{ .TableOfContents }}
+    {{- end }}
     <div class="content">
-      {{.Content}}
+      {{ .Content }}
     </div>
-    {{with site.RegularPages.Related .}}
+    {{- with site.RegularPages.Related . }}
     <div id="related">
       <h2>Related Pages</h2>
       <ul class="posts">
-        {{range first 3 .}}
+        {{- range first 3 . }}
           {{/*  {{partialCached "card.html" . .RelPermalink}}  */}}
-          {{.Render "card"}}
-        {{end}}
+          {{- .Render "card" -}}
+        {{- end }}
       </ul>
     </div>
-    {{end}}  
+    {{- end }}
   </main>
   <aside>
-    <!-- <section> 
-      <h2>Information</h2> 
-      <p>{{.Summary}}</p>
-    </section> -->
     <section>
       <h2>Reading time</h2>
       <p>{{.ReadingTime}} {{if lt .ReadingTime 2}}minute{{else}}minutes{{end}} (~{{.FuzzyWordCount}} words)</p> 
     </section>
-    {{with .Params.tags}}
+    {{- with .Params.tags }}
     <section>
       <h2>Tags</h2> 
-      {{range .}} 
-        <p>
-          <a href="{{"/tags/" | relLangURL}}{{. | urlize}}"> 
-            {{partial "capitalize" .}}
-          </a> 
-        </p>
-      {{end}}
+      {{- range . }} 
+      <p>
+        <a href="{{"/tags/" | relLangURL}}{{. | urlize}}"> 
+          {{- partial "capitalize" . -}}
+        </a> 
+      </p>
+      {{- end }}
     </section>
-    {{end}}
-    {{/*  <section>
-      <h2>Word Count</h2>
-      <p>~{{.FuzzyWordCount}} words</p> 
-    </section>  */}}
+    {{- end }}
   </aside>
 </div>
-{{end}}
+{{- end }}

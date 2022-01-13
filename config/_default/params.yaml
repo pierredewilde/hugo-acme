@@ -1,6 +1,7 @@
-# color: "#4f46e5" # warning: color must be quoted (# == comment)
-color: "#DC2626"
-# color: "#008080"
+# warning: color must be quoted (# == comment) 
+# color: "#4f46e5"
+# color: "#DC2626"
+color: "#008080"
 title: Acme Corporation
 subtitle: Shaping the ***world*** for you to **live in**
 copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reserved.
@@ -21,8 +22,8 @@ footer:
 - title: Important Links
   menu: true
 style: blue
-logo: assets/image/logo.svg
-logo_small: assets/image/logo.svg
+logo: static/image/logo.svg
+logo_small: static/image/logo.svg
 about_us: >
   Acme Corporation is the world's leading manufacturer 
   of digital shapes. From squares and circles to 

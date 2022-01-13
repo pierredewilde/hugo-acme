@@ -1,8 +1,8 @@
 <li class="post">
   <a href="{{.RelPermalink}}">
-    {{with (.Resources.GetMatch "cover.*")}}
+    {{- with (.Resources.GetMatch "cover.*") }}
       <img src="{{(.Resize `500x webp`).RelPermalink}}" alt="{{.Title}}" title="{{.Title}}" loading="lazy" />
-    {{end}}
+    {{ end -}}
     <h2>{{.Title}}</h2>
     <article>{{.Summary}}</article>
     <div>Read More</div>
