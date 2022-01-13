@@ -1,4 +1,5 @@
 baseURL: /
+relativeURLs: false
 languageCode: en-us
 enableEmoji: true # convert :emoji: 
 enableGitInfo: true
