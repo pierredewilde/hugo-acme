@@ -4,4 +4,4 @@ languageCode: en-us
 enableEmoji: true # convert :emoji: 
 enableGitInfo: true
 paginate: 3
-theme: Acme
+theme: acme
