@@ -1,4 +1,4 @@
-/* patch css */
+/* patch default CSS */
 
 :root {
   --content-padding: 10px;
@@ -13,40 +13,21 @@ ul, ol {
   padding: 0 0 0 5px;
 }
 
-p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-blockquote:before {
-  font-family: _serif;
-  content: open-quote;
-  font-size: 4vw;
-  float: left;
-}
-
-blockquote p {
-  text-align: center;
-  font-size: 3vw;
-}
-
-blockquote:after {
-  font-family: _serif;
-  content: open-quote;
-  font-size: 4vw;
-  float: right;
-}
-
 footer.dark {
-  padding: 0px;
+  padding: 0;
 }
 
 footer>nav {
   margin: 0;
 }
 
+#social, #social>a {
+  padding: 0;
+  margin: 0;
+}
+
 #copyright {
-  padding: 0px;
+  padding: 0;
   margin: 0;
   font-size: .8rem;
 }
@@ -76,4 +57,32 @@ footer>* {
 
 #related {
   margin: 0;
+}
+
+.page.survey form input {
+  float: left;
+  width: 100%;
+  margin-bottom: 1rem;;
+}
+.page.survey form select {
+  float: left;
+  width: auto;
+  margin-bottom: 1rem;;
+}
+
+#related, .comments {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+#related h2, .comments h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+body.page form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
 }
