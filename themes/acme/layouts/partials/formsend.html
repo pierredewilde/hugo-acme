@@ -1,12 +1,10 @@
-{{- $form := .Param (print "form." (.Param "formType")) -}}
+{{- $form := .Param "form" }}
 {{- $title:= print site.Params.title " - " .Title -}}
 {{- $link := .Permalink }}
 {{- $redir := .Permalink }}
 {{with $form.subject}}<input type="hidden" name="{{.}}" value="{{$title}}">{{end}}
 {{with $form.key}}<input type="hidden" name="{{.}}" value="{{$form.value}}">{{end}}
 {{with $form.link}}<input type="hidden" name="{{.}}" value="{{$link}}">{{end}}
-{{with $form.redir}}<input type="hidden" name="{{.}}" value="{{$redir}}">{{end}}
-{{with $form.from}}<input type="hidden" name="{{.}}" value="{{$form.fromValue}}">{{end}}
 {{with $form.reply}}<input type="hidden" name="{{.}}" value="{{$form.replyValue}}">{{end}}
 {{with $form.check}}<input type="checkbox" name="{{.}}" style="display:none;">{{end}}
 <div>

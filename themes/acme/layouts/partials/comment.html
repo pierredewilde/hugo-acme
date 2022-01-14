@@ -1,8 +1,9 @@
-{{ if .Param "comments" }}
+{{- if .Param "comments" }}
 <div class="comments">
   <h2>Send a comment</h2>
-  {{- $form := partial "forminit" . -}}
-  <form action="{{ $form.api }}" method="post">
+  {{- $form := .Param "form" }}
+  <form data-dynamic-form data-success="#comment-success" data-error="#comment-error" 
+    action="{{ $form.api }}" method="post">
     <div>
       <label for="name">Name:</label>
       <input name="name" type="text" required>
@@ -15,11 +16,7 @@
       <label for="message">Comment:</label>
       <textarea name="message" cols="50" rows="10" required></textarea>
     </div>
-    {{- partial "formsend" . -}}
+    {{- partial "formsend" . }}
   </form>
 </div>
-{{/*  {{ else }}
-<div>
-  Comments are disabled.
-</div>  */}}
-{{ end }}
+{{- end }}

@@ -7,36 +7,18 @@ copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reser
 email: acme@example.org
 comments: true
 relatedPages: true
-formType: staticforms
 form:
-  staticforms:
-    api: https://api.staticforms.xyz/submit
-    key: accessKey
-    value: e31248c0-c79d-41bd-b6a3-fcda5cc4f1a1
-    value2: 6ab992e3-170f-4531-979b-25c812855c34
-    subject: subject
-    link: $link
-    redir: redirectTo
-    from: 
-    fromValue:
-    reply: replyTo
-    replyValue: "@"
-    prefix: "$"
-    check: honeypot
-  web3forms:
-    api: https://api.web3forms.com/submit
-    key: apikey
-    value: c017b171-1d51-4286-b8b3-c1b6f3cabcc8
-    value2: dcb5a30d-cfee-4da9-b6b4-655d0046bc34
-    subject: subject
-    link: link
-    redir: redirect
-    from: from_name
-    fromValue: Web3Forms
-    reply:
-    replyValue:
-    prefix:
-    check: botcheck
+  api: https://api.staticforms.xyz/submit
+  key: accessKey
+  value: e31248c0-c79d-41bd-b6a3-fcda5cc4f1a1
+  value2: 6ab992e3-170f-4531-979b-25c812855c34
+  subject: subject
+  link: $link
+  reply: replyTo
+  replyValue: "@"
+  prefix: "$"
+  check: honeypot
+  remove: true
 footer:
 - title: About
   content: >

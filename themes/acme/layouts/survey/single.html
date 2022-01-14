@@ -3,7 +3,7 @@
 <main>
   <h2>{{.Title}}</h2>
   {{.Content}}
-  {{- $form := partial "forminit" . }}
+  {{- $form := .Param "form" }}  
   <form action="{{ $form.api }}" method="post">
     <ol>
     {{range $index, $item := .Params.survey}}

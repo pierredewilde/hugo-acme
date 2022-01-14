@@ -10,7 +10,7 @@
     <div class="content">
       {{.Content}}
     </div>
-    {{- $form := partial "forminit" . }}
+    {{- $form := .Param "form" }}
     <form action="{{ $form.api }}" method="post">
       <div>
         <label for="name">Name:</label>
