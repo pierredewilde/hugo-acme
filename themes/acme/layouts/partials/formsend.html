@@ -1,7 +1,6 @@
 {{- $form := .Param "form" }}
 {{- $title:= print site.Params.title " - " .Title -}}
 {{- $link := .Permalink }}
-{{- $redir := .Permalink }}
 {{with $form.subject}}<input type="hidden" name="{{.}}" value="{{$title}}">{{end}}
 {{with $form.key}}<input type="hidden" name="{{.}}" value="{{$form.value}}">{{end}}
 {{with $form.link}}<input type="hidden" name="{{.}}" value="{{$link}}">{{end}}
