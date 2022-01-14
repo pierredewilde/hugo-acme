@@ -1,9 +1,0 @@
-{{ $src := default (.Get 0) (.Get "src") -}}
-{{ $alt := default ($src | path.Base) (.Get "alt") -}}
-{{ $width := default "" (.Get "width") -}}
-{{ $height := default "" (.Get "height") -}}
-<img src="{{ $src | relURL }}"
-{{- with $alt }} alt="{{ $alt }}"{{ end -}}
-{{- with $width }} width="{{ $width }}"{{ end -}}
-{{- with $height }} height="{{ $height }}"{{ end -}}
->

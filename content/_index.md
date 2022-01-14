@@ -3,6 +3,7 @@ title: Acme Corporation
 description: Welcome to the website of Acme Corporation, the leading creator of digital shapes on the planet, providing precise shape creations that are ready to use.
 subtitle: Shaping the **world** for you to ***live in***
 explore: "#blog"
+outputs: [html, json]
 testimonials:
   - author: Brad
     from: Fictional Incorporated
@@ -19,6 +20,7 @@ testimonials:
     content: >
       Undoubted accuracy. Safety guarantee.
       We love what Acme delivers.
+  - tweet: https://twitter.com/atishay/status/1259605801968128000      
 ---
 
 Acme is the **best**

@@ -1,5 +1,0 @@
-{{ $href := default (.Get 0) (.Get "href") -}}
-{{ $target := default (default "" (.Get 1)) (.Get "target") -}}
-<a href="{{ $href | relURL }}" 
-{{- with $target }}target="{{ $target }}" rel="noopener"{{ end -}}
->{{ .Inner }}</a>

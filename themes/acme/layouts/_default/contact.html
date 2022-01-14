@@ -1,0 +1,31 @@
+{{define "bodyClass" }}page contact{{end}}
+{{define "main"}}
+<main>
+  {{$img := .Resources.GetMatch "cover.*"}}
+  {{ if $img }}
+  <img alt="{{.Title}}" width="1920" height="400" loading="lazy" src="{{($img.Fill "1920x400 Center").RelPermalink}}">
+  {{ end }}
+  <h1>{{ partial "capitalize" .Title }}</h1>
+  <div class="contact-box">
+    <div class="content">
+      {{.Content}}
+    </div>
+    {{- $form := partial "forminit" . }}
+    <form action="{{ $form.api }}" method="post">
+      <div>
+        <label for="name">Name:</label>
+        <input name="name" type="text" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input name="email" type="email" required>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea name="message" cols="50" rows="10" required></textarea>
+      </div>
+      {{- partial "formsend" . }}
+    </form>
+  </div>
+</main>
+{{end}}

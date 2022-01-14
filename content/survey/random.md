@@ -1,0 +1,12 @@
+---
+title: Random questions
+survey:
+- question: Do you like websites that are slow to load?
+  answer: ["Yes", "No"]
+- question: Rate your confidence using Hugo to build fast websites.
+  answer: [1 (Very Low),2,3,4,5 (Very High)]
+- question: What is the answer to life, the universe, and everything?
+- question: Any further comments.
+---
+
+Answer a random survey about Hugo in Action.

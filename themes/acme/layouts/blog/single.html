@@ -14,17 +14,8 @@
     <div class="content">
       {{ .Content }}
     </div>
-    {{- with site.RegularPages.Related . }}
-    <div id="related">
-      <h2>Related Pages</h2>
-      <ul class="posts">
-        {{- range first 3 . }}
-          {{/*  {{partialCached "card.html" . .RelPermalink}}  */}}
-          {{- .Render "card" -}}
-        {{- end }}
-      </ul>
-    </div>
-    {{- end }}
+    {{- partial "comment" . }}
+    {{- partial "related" . }}
   </main>
   <aside>
     <section>

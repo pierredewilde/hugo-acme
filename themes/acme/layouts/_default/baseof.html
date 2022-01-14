@@ -19,7 +19,7 @@
     {{ block "footer" . }}
     <footer class="dark">
       {{ partialCached "menu" (dict "menu" site.Menus.footer "button" false) "footer" }}
-      {{ partialCached "social" . }}
+      {{/*  {{ partialCached "social" . }}  */}}
       {{ partialCached "copyright" . }}
       {{ partialCached "hugo" . }}
     </footer>

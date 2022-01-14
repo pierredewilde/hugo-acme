@@ -1,0 +1,13 @@
+{{- if .Param "relatedPages" }}
+{{- with site.RegularPages.Related . }}
+<div id="related">
+  <h2>Related Pages</h2>
+  <ul class="posts">
+    {{- range first 3 . }}
+      {{/*  {{partialCached "card.html" . .RelPermalink}}  */}}
+      {{- .Render "card" -}}
+    {{- end }}
+  </ul>
+</div>
+{{- end }}
+{{- end }}

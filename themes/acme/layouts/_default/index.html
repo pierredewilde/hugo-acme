@@ -62,7 +62,7 @@
   <h1>Testimonials</h1>
   <div>
     <ol>
-    {{- range . }}
+    {{/*  {{- range . }}
       <li>
         <p>{{ .content }}</p>
         <div>
@@ -70,7 +70,27 @@
           <h3>{{ .from }}</h3>
         </div>
       </li>
-    {{ end -}}
+    {{ end -}}  */}}
+    {{range .}}
+    {{$author := default "" .author}}
+    {{$content := default "" .content}}
+    {{$from := default "" .from}}
+    {{if .tweet}}
+      {{$tweet := getJSON
+        "https://publish.twitter.com/oembed?url=" .tweet
+        "&omit_script=1&hide_media=1&hide_thread=1&dnt=true" }}
+      {{$author = $tweet.author_name }}
+      {{$from = "via Twitter"}}
+      {{$content = $tweet.html }}
+    {{end}}
+    <li>
+        <p>{{$content | safeHTML }}</p>
+        <div>
+          <h2>{{$author | title}}</h2>
+          <h3>{{$from}}</h3>
+        </div>
+    </li>
+    {{end}}
     </ol>
   </div>
 </section>
