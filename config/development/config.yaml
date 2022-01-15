@@ -1,5 +1,4 @@
 buildDrafts: true
+minify: false
 params:
   DebugMenu: false
-minify:
-  minifyOutput: false
