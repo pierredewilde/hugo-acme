@@ -784,7 +784,7 @@
         console.log(results);
         result.innerHTML = results.slice(0, maxSearch).map((x2) => `
           <a href="${x2.item.url}">
-          <img src="${x2.item.cover || relURL + "image/blank.gif"}" width=40 height=40>
+          <img src="${x2.item.cover || relURL + "/image/blank.gif"}" width=40 height=40>
           <h3>${x2.item.title}</h3>
             <span>${x2.item.content.substr(0, 40)}...</span>
           </a>
