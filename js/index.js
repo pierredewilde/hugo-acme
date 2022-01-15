@@ -38,7 +38,8 @@
         try {
           response = await fetch(form.action, {
             method: form.method,
-            body: JSON.stringify(Object.fromEntries(data))
+            body: JSON.stringify(Object.fromEntries(data)),
+            headers: { "Content-Type": "application/json" }
           });
           if (response.ok) {
             form.insertAdjacentHTML("afterend", '<div id="form-message" class="success">Your message has been successfully sent.</div>');
