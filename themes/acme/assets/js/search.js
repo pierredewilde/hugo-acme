@@ -10,7 +10,7 @@ export default {
   async init() {
     console.log(params);    
     try {
-      const response = await fetch(params.baseURL + 'index.json'); // needed by GitHub Pages
+      const response = await fetch(params.baseURL + '/index.json'); // needed by GitHub Pages
       if (!response.ok) {
         search.remove();
         return;
