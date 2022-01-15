@@ -751,7 +751,7 @@
     async init() {
       console.log(params_exports);
       try {
-        const response = await fetch(baseURL + "index.json");
+        const response = await fetch(baseURL + "/index.json");
         if (!response.ok) {
           search.remove();
           return;
