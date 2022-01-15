@@ -16,7 +16,7 @@ export default {
           // body: new URLSearchParams(data),
           // headers: { "Content-Type": "application/x-www-form-urlencoded" }
           body: JSON.stringify(Object.fromEntries(data)),
-          // headers: { "Content-Type": "application/json" }
+          headers: { "Content-Type": "application/json" }
         });
         if (response.ok) {
           form.insertAdjacentHTML('afterend', '<div id="form-message" class="success">Your message has been successfully sent.</div>');
