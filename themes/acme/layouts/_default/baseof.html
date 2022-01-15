@@ -9,10 +9,12 @@
     <link rel="icon" type="image/png" href="{{partialCached `favicon.png` .}}">
     <link rel="stylesheet" href="{{partialCached `index.css` .}}">
     <link rel="stylesheet" href="{{`css/custom.css` | relURL}}">
+    {{- $relURL := (site.BaseURL | relURL) }}
+    {{- $relURL := cond (eq $relURL "/") "" $relURL }}
     {{- $params := (dict  "hideForm" (.Param "form.hide") 
                           "timeout" (.Param "form.timeout") 
                           "maxSearch" (.Param "maxSearch") 
-                          "relURL" (site.BaseURL | relURL)
+                          "relURL" $relURL
                           "baseURL" (site.BaseURL) 
                     ) }}
     {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params) }}
