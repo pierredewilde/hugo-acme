@@ -12,7 +12,6 @@
     {{- $params := (dict  "hideForm" (.Param "form.hide") 
                           "timeout" (.Param "form.timeout") 
                           "maxSearch" (.Param "maxSearch") 
-                          "relURL" (site.BaseURL | relURL)
                           "baseURL" (site.BaseURL) 
                     ) }}
     {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params "minify" hugo.IsProduction) }}

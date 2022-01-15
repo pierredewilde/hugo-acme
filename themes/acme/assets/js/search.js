@@ -45,7 +45,7 @@ export default {
         .slice(0, params.maxSearch)
         .map(x => `
           <a href="${x.item.url}">
-          <img src="${x.item.cover || params.relURL + '/image/blank.gif'}" width=40 height=40>
+          <img src="${x.item.cover || params.baseURL + '/image/blank.gif'}" width=40 height=40>
           <h3>${x.item.title}</h3>
             <span>${x.item.content.substr(0,40)}...</span>
           </a>
