@@ -15,7 +15,7 @@
                           "relURL" (site.BaseURL | relURL)
                           "baseURL" (site.BaseURL) 
                     ) }}
-    {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params) }}
+    {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params "minify" hugo.IsProduction) }}
     <script type="text/javascript" src="{{ $js.RelPermalink }}" defer></script>    
     {{- $title := partial "capitalize" .Title }}
     {{- if (ne .Title site.Params.title) }}
