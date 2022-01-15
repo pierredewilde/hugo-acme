@@ -7,6 +7,7 @@ copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reser
 email: acme@example.org
 comments: true
 relatedPages: true
+maxSearch: 5
 form:
   api: https://api.staticforms.xyz/submit
   key: accessKey
@@ -18,7 +19,8 @@ form:
   replyValue: "@"
   prefix: "$"
   check: honeypot
-  remove: true
+  hide: false
+  timeout: 3
 footer:
 - title: About
   content: >

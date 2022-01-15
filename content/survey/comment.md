@@ -1,5 +1,6 @@
 ---
-title: Comments about Hugo In Action
+title: About Hugo In Action
+tags: [survey, book]
 survey:
 - question: Would you recommend it to others?
   answer: ["Yes", "No"]

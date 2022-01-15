@@ -2,8 +2,7 @@
 <div class="comments">
   <h2>Send a comment</h2>
   {{- $form := .Param "form" }}
-  <form data-dynamic-form data-success="#comment-success" data-error="#comment-error" 
-    action="{{ $form.api }}" method="post">
+  <form action="{{ $form.api }}" method="post">
     <div>
       <label for="name">Name:</label>
       <input name="name" type="text" required>

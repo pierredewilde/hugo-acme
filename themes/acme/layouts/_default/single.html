@@ -1,17 +1,17 @@
-{{define "bodyClass"}}page {{.Section}}{{end}}
-{{define "main"}}
+{{- define "bodyClass" }}page {{.Section}}{{ end }}
+{{- define "main" }}
 <main>
-  {{$img := .Resources.GetMatch "cover.*"}}
-  {{ if $img }}
+  {{- $img := .Resources.GetMatch "cover.*" }}
+  {{- if $img }}
     <img src="{{ ($img.Fill `1920x400 webp`).RelPermalink }}" alt="{{.Title}}" title="{{.Title}}" width="1920" height="400" loading="lazy">
-  {{ end }}
+  {{- end }}
   <h1>{{partial "capitalize" .Title}}</h1>
-  {{if .Param "toc"}}
+  {{- if .Param "toc" }}
   <h2>Table of Contents</h2>
     {{.TableOfContents}}
-  {{end}}
+  {{- end }}
   <div class="content">
     {{.Content}}
   </div>
 </main>
-{{end}}
+{{- end }}

@@ -1,4 +1,4 @@
-{{ define "bodyClass" }}page list{{ end }}
+{{- define "bodyClass" }}page list{{ end }}
 {{- define "main"}} 
 <main>
   <h1>{{partial "capitalize" $.CurrentSection.Data.Singular}} - {{partial "capitalize" .Title}}</h1>

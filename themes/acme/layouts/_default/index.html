@@ -2,14 +2,13 @@
 {{ define "main" }}
 
 <section id="hero">
-  <!-- {{ partialCached "logo" . }} -->
-  {{ partialCached "hero" . }}
   <div class="intro">
     <h1>{{ partial "capitalize" .Title }}</h1>
     {{ with .Param "subtitle" }}<h2>{{ . | markdownify }}</h2>{{ end }}
-    <a href="{{ relref . (.Param "explore") }}">Explore</a>
+    <a id="explore" href="{{ relref . (.Param "explore") }}">Explore</a>
     {{ partialCached "menu" (dict "Menu" site.Menus.footer) "footer" }}
   </div>
+  {{ partialCached "hero" . }}
 </section>
 
 {{- with (partialCached "products" .) }}

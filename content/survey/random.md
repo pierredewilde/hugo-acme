@@ -1,5 +1,6 @@
 ---
 title: Random questions
+tags: [survey, random, hugo]
 survey:
 - question: Do you like websites that are slow to load?
   answer: ["Yes", "No"]

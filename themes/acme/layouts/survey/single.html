@@ -1,31 +1,34 @@
-{{define "bodyClass"}}page survey{{end}}
-{{define "main"}}
+{{- define "bodyClass" }}page survey{{ end }}
+{{- define "main" }}
 <main>
-  <h2>{{.Title}}</h2>
-  {{.Content}}
-  {{- $form := .Param "form" }}  
-  <form action="{{ $form.api }}" method="post">
-    <ol>
-    {{range $index, $item := .Params.survey}}
-    {{$index := add $index 1}}
-      <li>
-        <label for="Q{{$index}}">{{$item.question}}</label>
-        {{if $item.answer}}
-        <div>
-        <select id="Q{{$index}}" name="{{$form.prefix}}{{$item.question}}" required>
-          <option value="" ></option>
-          {{range $item.answer}}
-            <option value="{{.}}" name="{{.}}">{{.}}</option>
-          {{end}}
-        </select>
-        {{else}}
-        <input id="Q{{$index}}" name="{{$form.prefix}}{{$item.question}}" type="text" required>
-        {{end}}
-        </div>
-      </li>
-    {{end}}
-    </ol>
-    {{- partial "formsend" . }}
-  </form>
+  {{/*  <div class="comments">  */}}
+    <h1>{{partial "capitalize" .Title}}</h1>
+    <div class="content">
+      {{.Content}}
+    </div>
+    {{- $form := .Param "form" }}  
+    <form action="{{ $form.api }}" method="post">
+      <ol>
+      {{- range $index, $item := .Params.survey }}
+        {{- $index := add $index 1 }}
+        <li>
+          <label for="Q{{$index}}">{{$item.question}}</label>
+          {{- if $item.answer }}
+            <div>
+            <select id="Q{{$index}}" name="{{$form.prefix}}{{$item.question}}" required>
+              <option value="" ></option>
+              {{- range $item.answer }}
+                <option value="{{.}}" name="{{.}}">{{.}}</option>
+              {{- end }}
+            </select>
+          {{- else }}
+            <input id="Q{{$index}}" name="{{$form.prefix}}{{$item.question}}" type="text" required>
+          {{- end }}
+        </li>
+      {{- end }}
+      </ol>
+      {{- partial "formsend" . }}
+    </form>
+  {{/*  </div>  */}}
 </main>
-{{end}}
+{{- end }}

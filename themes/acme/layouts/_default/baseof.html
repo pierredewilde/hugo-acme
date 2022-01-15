@@ -9,8 +9,13 @@
     <link rel="icon" type="image/png" href="{{partialCached `favicon.png` .}}">
     <link rel="stylesheet" href="{{partialCached `index.css` .}}">
     <link rel="stylesheet" href="{{`css/custom.css` | relURL}}">
-    {{- $params := (dict "remove" (.Param "form.remove")) }}
-    {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params) | minify }}
+    {{- $params := (dict  "hideForm" (.Param "form.hide") 
+                          "timeout" (.Param "form.timeout") 
+                          "maxSearch" (.Param "maxSearch") 
+                          "relURL" (site.BaseURL | relURL)
+                          "baseURL" (site.BaseURL) 
+                    ) }}
+    {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params) }}
     <script type="text/javascript" src="{{ $js.RelPermalink }}" defer></script>    
     {{- $title := partial "capitalize" .Title }}
     {{- if (ne .Title site.Params.title) }}
@@ -22,6 +27,7 @@
     {{ block "header" . }}
     <header>
       {{ partialCached "logo" . }}
+      {{ partialCached "search" . }}
       {{ partialCached "menu" (dict "menu" site.Menus.main "button" true) "main" }}
     </header>
     {{ end }}

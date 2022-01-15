@@ -1,5 +1,4 @@
-baseURL: /
-relativeURLs: false
+baseURL: http://localhost:1313/
 languageCode: en-us
 enableEmoji: true
 enableGitInfo: true
