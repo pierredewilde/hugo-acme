@@ -86,3 +86,20 @@ body.page form button {
   margin-right: auto;
   outline: none;
 }
+
+.success, .error {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#search {
+  border-width: 0;
+}
+
+#search>div h3 {
+  font-family: sans-serif;
+}
+
+.news h1, .news h2 {
+  font-family: sans-serif;
+}
