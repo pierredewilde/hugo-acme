@@ -1,23 +1,24 @@
 import * as params from '@params';
-import Fuse from './fuse';
+import Fuse from './fuse@6.5.3.esm.min';
+import SearchSupport from './searchSupport'
 
 const search = document.getElementById('search');
 const input = document.getElementById('search_input');
 const result = document.getElementById('search_result');
 let index = null;
 
+
 export default {
   async init() {
-    console.log(params);    
+// console.log(params);
     try {
-      const response = await fetch(params.baseURL + '/index.json'); // needed by GitHub Pages
+      const response = await fetch(params.baseURL + '/index.json'); // baseURL needed by GitHub Pages
       if (!response.ok) {
         search.remove();
         return;
       }
       let data = await response.json(); // content cover date tags[] title url
-      // fuzzy search indexation      
-      index = new Fuse(data, {
+      index = new Fuse(data, { // create fuse index
         keys: [{
           name: 'title',
           weight: 20
@@ -29,6 +30,7 @@ export default {
           weight: 1
         }]
       });
+      SearchSupport();
     } catch(e) {
       search.remove();
     }
@@ -40,7 +42,7 @@ export default {
     result.style.display = 'block';
     if (input.value.length > 0) {
       const results = index.search(input.value);
-  console.log(results);
+// console.log(results);
       result.innerHTML = results
         .slice(0, params.maxSearch)
         .map(x => `
