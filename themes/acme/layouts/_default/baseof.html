@@ -5,7 +5,7 @@
     {{- with default .Summary .Description}}<meta name="description" content="{{.}}">{{- end }}  
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     {{- template "_internal/twitter_cards.html" . }}
-    {{- template "_internal/opengraph.html" . }}  
+    {{- template "_internal/opengraph.html" . }}
     <link rel="icon" type="image/png" href="{{ partialCached `favicon.png` . }}">
     <link rel="stylesheet" href="{{ partialCached `index.css` . }}">
     {{- $params := (dict  "hideForm" (.Param "form.hide") 
@@ -13,14 +13,12 @@
                           "maxSearch" (.Param "maxSearch") 
                           "baseURL" (site.BaseURL) 
                     ) }}
-    {{- if .Param "latex"  }}
-      {{/*  <link rel="stylesheet" href="{{ `latex/katex.min.css` | relURL }}">  */}}
-      {{/*  <script src="{{ `latex/katex.min.js` | relURL }}"></script>      */}}
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.js"></script>    
+      {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params "minify" hugo.IsProduction) }}
+      <script src="{{ $js.RelPermalink }}"></script>    
+      {{- if .Param "latex"  }}
+    <link rel="stylesheet" href="{{ `latex/katex.min.css` | relURL }}">
+    <script src="{{ `latex/katex.min.js` | relURL }}"></script>    
     {{- end }}
-    {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params "minify" hugo.IsProduction) }}
-    <script src="{{ $js.RelPermalink }}" defer></script>    
     <link rel="stylesheet" href="{{ `css/custom.css` | relURL}}">
     {{- $title := partial "capitalize" .Title }}
     {{- if (ne .Title site.Params.title) }}
