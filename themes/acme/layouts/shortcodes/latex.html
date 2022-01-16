@@ -1,12 +1,5 @@
-{{/*  TODO unique id if several latex in same page ?  */}}
+{{- $id := print "latex_" now.UnixMicro }}
+<span id="{{$id}}" title="LaTeX: {{.Inner}}">{{.Inner}}</span>
 {{- if site.Param "latex" }}
-  <span id="latex"></span>
-  <script type="text/javascript">
-    const html = katex.renderToString("{{ .Inner }}", {
-      throwOnError: false
-    });
-    document.getElementById('latex').innerHTML = html;
-  </script>
-{{- else }}
-  <span id="latex">{{ .Inner }}</span>
+  <script>katex.render("{{.Inner}}", document.getElementById("{{$id}}"), {throwOnError:false})</script>
 {{- end }}

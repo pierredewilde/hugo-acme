@@ -1,5 +1,5 @@
 import * as params from '@params';
-import Fuse from './fuse@6.5.3.esm.min';
+import Fuse from './fuse.min';
 import SearchSupport from './searchSupport'
 
 const search = document.getElementById('search');

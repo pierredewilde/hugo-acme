@@ -14,11 +14,11 @@
                           "baseURL" (site.BaseURL) 
                     ) }}
     {{- if .Param "latex"  }}
-      <link rel="stylesheet" href="{{ `css/katex@0.15.2.min.css` | relURL }}">
-      <script type="text/javascript" src="{{ `js/katex@0.15.2.min.js` | relURL }}"></script>    
+      <link rel="stylesheet" href="{{ `latex/katex.min.css` | relURL }}">
+      <script src="{{ `latex/katex.min.js` | relURL }}"></script>    
     {{- end }}
     {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params "minify" hugo.IsProduction) }}
-    <script type="text/javascript" src="{{ $js.RelPermalink }}" defer></script>    
+    <script src="{{ $js.RelPermalink }}" defer></script>    
     <link rel="stylesheet" href="{{ `css/custom.css` | relURL}}">
     {{- $title := partial "capitalize" .Title }}
     {{- if (ne .Title site.Params.title) }}

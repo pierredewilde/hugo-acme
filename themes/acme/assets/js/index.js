@@ -1,6 +1,6 @@
 import * as params from '@params';
 
-// TODO not optimized: loaded on each page
+// TODO not optimized - loaded on each page
 import FormHandler from "./formHandler";
 import Search from "./search";
 

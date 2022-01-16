@@ -10,22 +10,7 @@
     <div class="content">
       {{.Content}}
     </div>
-    {{- $form := .Param "form" }}
-    <form action="{{ $form.api }}" method="post">
-      <div>
-        <label for="name">Name:</label>
-        <input name="name" type="text" required>
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input name="email" type="email" required>
-      </div>
-      <div>
-        <label for="message">Message:</label>
-        <textarea name="message" cols="50" rows="5" required></textarea>
-      </div>
-      {{- partial "formsend" . }}
-    </form>
+    {{- partial "message" . }}
   </div>
 </main>
 {{- end }}
