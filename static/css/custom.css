@@ -103,3 +103,7 @@ body.page form button {
 .news h1, .news h2 {
   font-family: sans-serif;
 }
+
+.katex * {
+  font-size: 1.5rem;
+}

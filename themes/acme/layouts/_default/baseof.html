@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     {{- template "_internal/twitter_cards.html" . }}
     {{- template "_internal/opengraph.html" . }}  
-    <link rel="icon" type="image/png" href="{{partialCached `favicon.png` .}}">
-    <link rel="stylesheet" href="{{partialCached `index.css` .}}">
-    <link rel="stylesheet" href="{{`css/custom.css` | relURL}}">
+    <link rel="icon" type="image/png" href="{{ partialCached `favicon.png` . }}">
+    <link rel="stylesheet" href="{{ partialCached `index.css` . }}">
     {{- $params := (dict  "hideForm" (.Param "form.hide") 
                           "timeout" (.Param "form.timeout") 
                           "maxSearch" (.Param "maxSearch") 
                           "baseURL" (site.BaseURL) 
                     ) }}
+    {{- if .Param "latex"  }}
+      <link rel="stylesheet" href="{{ `css/katex@0.15.2.min.css` | relURL }}">
+      <script type="text/javascript" src="{{ `js/katex@0.15.2.min.js` | relURL }}"></script>    
+    {{- end }}
     {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params "minify" hugo.IsProduction) }}
     <script type="text/javascript" src="{{ $js.RelPermalink }}" defer></script>    
+    <link rel="stylesheet" href="{{ `css/custom.css` | relURL}}">
     {{- $title := partial "capitalize" .Title }}
     {{- if (ne .Title site.Params.title) }}
     {{- $title := (print $title " | " (partial "capitalize" site.Params.title)) }}
@@ -23,28 +27,28 @@
     <title>{{$title}}</title>
   </head>
   <body class="{{ block `bodyClass` . }}{{ end }}">
-    {{ block "header" . }}
+    {{- block "header" . }}
     <header>
-      {{ partialCached "logo" . }}
-      {{ partialCached "search" . }}
-      {{ partialCached "menu" (dict "menu" site.Menus.main "button" true) "main" }}
+      {{- partialCached "logo" . }}
+      {{- partialCached "search" . }}
+      {{- partialCached "menu" (dict "menu" site.Menus.main "button" true) "main" }}
     </header>
-    {{ end }}
-    {{ block "main" . }}
+    {{- end }}
+    {{- block "main" . }}
     <main>
-      <h1>{{ partial "capitalize" .Title }}</h1>
+      <h1>{{- partial "capitalize" .Title }}</h1>
       <div class="content">
         {{ .Content }}
       </div>
     </main>
-    {{ end }}
-    {{ block "footer" . }}
+    {{- end }}
+    {{- block "footer" . }}
     <footer class="dark">
-      {{ partialCached "menu" (dict "menu" site.Menus.footer "button" false) "footer" }}
-      {{/*  {{ partialCached "social" . }}  */}}
-      {{ partialCached "copyright" . }}
-      {{ partialCached "hugo" . }}
+      {{- partialCached "menu" (dict "menu" site.Menus.footer "button" false) "footer" }}
+      {{/*  {{- partialCached "social" . }}  */}}
+      {{- partialCached "copyright" . }}
+      {{- partialCached "hugo" . }}
     </footer>
-    {{ end }}
+    {{- end }}
   </body>
 </html>

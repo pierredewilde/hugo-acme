@@ -5,6 +5,7 @@ color: "#008080"
 title: Acme Corporation
 copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reserved.
 email: acme@example.org
+latex: true
 comments: true
 relatedPages: true
 maxSearch: 5

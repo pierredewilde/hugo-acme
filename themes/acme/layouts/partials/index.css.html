@@ -1,4 +1,6 @@
 {{/* warning: css order is important */}}
-{{ $css := (resources.Match "css/*.tpl.css") | resources.Concat "index.css" }}
-{{ $css := $css | resources.ExecuteAsTemplate "index.css" . | minify }}
-{{ return $css.RelPermalink }}
+{{/*  {{ $css := (resources.Match "css/*.tpl.css") | resources.Concat "index.css" }}  */}}
+{{- $css := (resources.Match "css/*.css") | resources.Concat "index.css" }}
+{{- $css := $css | resources.ExecuteAsTemplate "index.css" . }}
+{{- with hugo.IsProduction }}{{- $css := $css | minify }}{{- end }}
+{{- return $css.RelPermalink }}
