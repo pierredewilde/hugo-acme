@@ -80,11 +80,12 @@ footer>* {
   font-size: 1.5rem;
 }
 
-body.page form button {
+#form_send {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  outline: none;
+  /* width: 100%; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* outline: none; */
 }
 
 .success, .error {
