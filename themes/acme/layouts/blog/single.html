@@ -14,8 +14,6 @@
     <div class="content">
       {{ .Content }}
     </div>
-    {{- partial "comment" . }}
-    {{- partial "related" . }}
   </main>
   <aside>
     <section>
@@ -36,4 +34,6 @@
     {{- end }}
   </aside>
 </div>
+{{- partial "related" . }}
+{{- partial "comment" . }}
 {{- end }}

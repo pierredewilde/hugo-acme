@@ -11,34 +11,16 @@
   {{ partialCached "hero" . }}
 </section>
 
-{{- with (partialCached "products" .) }}
+{{- with (where site.RegularPages ".Section" "store") }}
 <section id="store">
   <h1>Our Products</h1>
-  <ul class="posts">
-  {{- range $i, $value := . }}
-  {{- if gt $i 0 }}
-    {{- $name := index $value 0 }}
-    {{- $price := index $value 2 }}
-    {{- $rating := index $value 3 }}
-    {{- $post := index $value 4 }}
-    <li>
-      <a href="{{ $post }}">
-        {{- $img := resources.GetMatch (print "image/products/" $name ".*") | images.Filter (images.Overlay (resources.GetMatch "image/watermark.*") 0 0 ) }}
-        {{- $img := $img.Resize "500x webp" }}
-        <img src="{{$img.RelPermalink}}" alt="{{$name}}">
-        <h2>{{$name}}</h2>
-        <div class="price">$ {{$price}}</div>
-        <div class="rating">
-        {{- range (seq $rating)}}&starf;{{ end -}}
-        {{- range seq (sub 5 ($rating | int))}}&star;{{ end -}}
-        </div>
-      </a>
-    </li>
-  {{ end -}}
-  {{ end -}}
+  <ul class="products">
+  {{- range first 6 . }}
+    {{- .Render "card" }}
+  {{- end }}
   </ul>
 </section>
-{{ end -}}
+{{- end }}
 
 <section id="description">
   {{ .Content }}
@@ -61,15 +43,6 @@
   <h1>Testimonials</h1>
   <div>
     <ol>
-    {{/*  {{- range . }}
-      <li>
-        <p>{{ .content }}</p>
-        <div>
-          <h2>{{ .author }}</h2>
-          <h3>{{ .from }}</h3>
-        </div>
-      </li>
-    {{ end -}}  */}}
     {{range .}}
     {{$author := default "" .author}}
     {{$content := default "" .content}}

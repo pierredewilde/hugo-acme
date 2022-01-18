@@ -1,5 +1,6 @@
-{{- $id := print "latex_" now.UnixMicro }}
+{{- $id := print "latex_" now.UnixMicro -}}
+{{- if eq (site.Param "latex") "break" }}<br>{{- end }}
 <span id="{{$id}}" title="LaTeX: {{.Inner}}">{{.Inner}}</span>
-{{- if site.Param "latex" }}
-  <script>katex.render("{{.Inner}}", document.getElementById("{{$id}}"), {throwOnError:false})</script>
+{{- if (site.Param "latex") }}
+<script>katex.render("{{.Inner}}",document.getElementById("{{$id}}"),{throwOnError:false})</script>
 {{- end }}

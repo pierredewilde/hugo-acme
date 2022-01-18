@@ -1,2 +1,2 @@
-{{ $words := split $ " " }}
+{{- $words := (split $ " ") }}
 {{- range $words }}{{ print (. | humanize) " " }}{{ end -}}

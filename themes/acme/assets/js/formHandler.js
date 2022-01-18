@@ -5,7 +5,7 @@ export default {
     document.addEventListener('submit', async event => {
       if (!(event.target instanceof HTMLFormElement)) { return; }
       event.preventDefault();
-      const submit = document.getElementById('submit')
+      const submit = document.querySelector('form button[type=submit]');
       const form = event.target;
       const data = new FormData(form);
       let response;

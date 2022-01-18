@@ -1,0 +1,8 @@
+{{- $products := (partialCached "products" . ) }}
+{{- $scratch := newScratch }}
+{{- range $i, $product := $products }}
+  {{- if eq $product.name $ }}
+    {{- $scratch.Set "index" $i }}
+  {{- end }}
+{{- end }}
+{{- return index $products ($scratch.Get "index") }}

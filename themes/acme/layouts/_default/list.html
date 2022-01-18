@@ -2,7 +2,7 @@
 {{- define "main" }}
 <main>
   <h1>{{ partial "capitalize" .Title }}</h1>
-  {{ .Content }}
+  <center>{{.Content}}</center>
   {{- $pages := .RegularPages }}
   {{- range .Sections }}
     {{- $pages = append $pages .RegularPages }}
@@ -17,7 +17,6 @@
     {{- end }}
   </ul>
   {{- end }}
-  {{/*  {{ template "_internal/pagination.html" (dict "page" . "format" "terse") }}  */}}
-  {{- template "_internal/pagination.html" (dict "page" .) }}
+  {{- template "_internal/pagination.html" (dict "page" . "format" "terse") }}
 </main>
 {{- end }}

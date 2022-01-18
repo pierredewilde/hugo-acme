@@ -1,1 +1,4 @@
-{{ return (resources.Get "data/products.csv" | transform.Unmarshal (dict "delimiter" ",")) }}
+{{/*  {{- return (resources.Get "data/products.csv" | transform.Unmarshal (dict "delimiter" ",")) }}  */}}
+{{/*  {{- $file := (resources.Get "data/products.json").RelPermalink }}  */}}
+{{/*  {{- return getJSON "assets" $file  }}  */}}
+{{- return (resources.Get "data/products.json" | unmarshal) }}

@@ -5,9 +5,10 @@ color: "#008080"
 title: Acme Corporation
 copyright: Copyright &copy; Acme Corporation&trade;, 1990-2021. All Rights Reserved.
 email: acme@example.org
-latex: true
+custom: true
 comments: true
-relatedPages: true
+related: true
+latex: true
 maxSearch: 5
 form:
   api: https://api.staticforms.xyz/submit

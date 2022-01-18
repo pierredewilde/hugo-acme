@@ -1,0 +1,38 @@
+{{- define "bodyClass" }}page store{{- end }}
+{{- define "main" }}
+{{- $product := (partial "product" .Params.product) }}
+<main>
+  {{- with (.Resources.GetMatch "cover.*")}} 
+    {{- $img := . | images.Filter (images.Overlay (resources.GetMatch "image/watermark.*") 0 0 ) }}
+    {{- $img := $img.Resize "1000x webp" }}
+    <img loading="lazy" src="{{$img.RelPermalink}}" alt="{{$.Title}}">
+  {{- end }}
+  <div>
+    <h1>{{.Title}}</h1>
+    <div class="rating">
+      {{- range (seq $product.rating)}}&starf;{{ end -}}
+      {{- range seq (sub 5 ($product.rating | int))}}&star;{{ end -}}
+    </div>
+    <p>{{.Summary}}</p>
+    <div class="price">${{$product.price}}</div>
+    <form>
+      <input type="hidden" name="name" value="{{.Title }}">
+      <label for="color-selector"> Select Color</label>
+      <div class="colors" >
+      {{- range $i, $c := split $product.colors "," }}
+        <label>
+          <input type="radio" name="color" value="{{trim $c " "}}" {{if eq $i 0}}checked{{end}}>
+          <span class="sr-only">{{$c}}</span>
+        </label>
+      {{- end }}
+      </div>
+      <button class="addToCart" type="submit">Add to cart</button>
+      <button class="buyNow" type= "submit">Buy Now</button>
+    </form>
+    <h2>Specifications</h2>
+    {{.Content}}
+  </div>
+</main>
+{{- partial "related" . }}
+{{- partial "comment" . }}
+{{- end }}

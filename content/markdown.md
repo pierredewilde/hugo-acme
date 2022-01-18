@@ -121,4 +121,4 @@ Content with a -- (dash) and a --- (long dash).
 
 Sample inline code `a++` can be specified here.
 
-![Alt Text](/image/hugo-logo.png "Optional Tooltip")
+![Alt Text](/image/hugo.png "Optional Tooltip")

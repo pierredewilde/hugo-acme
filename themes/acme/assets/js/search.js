@@ -5,14 +5,12 @@ import SearchSupport from './searchSupport'
 const search = document.getElementById('search');
 const input = document.getElementById('search_input');
 const result = document.getElementById('search_result');
-let index = null;
-
+let index = null;    
 
 export default {
   async init() {
-// console.log(params);
     try {
-      const response = await fetch(params.baseURL + '/index.json'); // baseURL needed by GitHub Pages
+      const response = await fetch(params.baseURL + '/index.json'); // baseURL for GitHub Pages
       if (!response.ok) {
         search.remove();
         return;
@@ -57,4 +55,5 @@ export default {
       result.innerHTML = '';
     }
   }
+
 }

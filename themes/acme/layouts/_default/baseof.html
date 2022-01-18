@@ -13,14 +13,14 @@
                           "maxSearch" (.Param "maxSearch") 
                           "baseURL" (site.BaseURL) ) }}
     {{- $js := resources.Get "js/index.js" | js.Build (dict "params" $params "minify" hugo.IsProduction) }}
-    <script src="{{ $js.RelPermalink }}"></script>    
-    {{- if .Param "latex"  }}
-    {{/*  <link rel="stylesheet" href="{{ `latex/katex.min.css` | relURL }}">  */}}
-    {{/*  <script src="{{ `latex/katex.min.js` | relURL }}"></script>      */}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.js"></script>    
-    {{- end }}
+    <script src="{{ $js.RelPermalink }}" defer></script>    
+  {{- if .Param "latex" }}
+    <link rel="stylesheet" href="{{ `latex/katex.min.css` | relURL }}">
+    <script src="{{ `latex/katex.min.js` | relURL }}"></script>    
+  {{- end }}
+  {{- if .Param "custom" }}  
     <link rel="stylesheet" href="{{ `css/custom.css` | relURL}}">
+  {{- end }}
     {{- $title := partial "capitalize" .Title }}
     {{- if (ne .Title site.Params.title) }}
     {{- $title := (print $title " | " (partial "capitalize" site.Params.title)) }}

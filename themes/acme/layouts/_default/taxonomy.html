@@ -26,7 +26,6 @@
       {{- end }}
     </ul>
   {{- end }}
-{{/*  {{ template "_internal/pagination.html" (dict "page" . "format" "terse") }}  */}}
-{{- template "_internal/pagination.html" (dict "page" .) }}
+  {{- template "_internal/pagination.html" (dict "page" . "format" "terse") }}
 </main>
 {{- end }}

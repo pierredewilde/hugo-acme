@@ -1,12 +1,12 @@
 ---
 title: Line
 date: 2022-01-04T21:57:20+01:00
-draft: true
+draft: false
 tags: [line, shape, product]
 categories: [shape, line]
 series: [design]
-relatedPages: true
-comments: true
+related: true
+comments: false
 ---
 
 In geometry, the notion of line or straight line was introduced by ancient mathematicians to represent straight objects (i.e., having no curvature) with negligible width and depth.

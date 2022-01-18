@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Circle",
+    "colors": "Red, Green, Blue, Orange",
+    "price": 2,
+    "rating": 4,
+    "post": "blog/community/circle",
+    "desc": "A circle is a shape consisting of all points in a plane that are a given distance from a given point, the centre"
+  },
+  {
+    "name": "Square",
+    "colors": "Red, Pink, Blue",
+    "price": 4,
+    "rating": 5,
+    "post": "blog/building-squares",
+    "desc": "A square is a regular quadrilateral, which means that it has four equal sides and four equal angles"
+  },
+  {
+    "name": "Line",
+    "colors": "Yellow, Blue",
+    "price": 1,
+    "rating": 3,
+    "post": "blog/line",
+    "desc": "Straight objects (i.e., having no curvature) with negligible width and depth"
+  },
+  {
+    "name": "Rhombus",
+    "colors": "Green",
+    "price": 3,
+    "rating": 5,
+    "post": "#store",
+    "desc": "A parallelogram in which a diagonal bisects an interior angle"
+  },
+  {
+    "name": "Rectangle",
+    "colors": "Red",
+    "price": 2.99,
+    "rating": 4,
+    "post": "#store",
+    "desc": "A square is a regular quadrilateral, which means that it has four equal sides and four equal angles"
+  }
+]

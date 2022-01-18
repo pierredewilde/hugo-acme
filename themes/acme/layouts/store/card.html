@@ -1,0 +1,28 @@
+{{- $product := partial "product" .Params.product }}
+<li class="product">
+  <a href="{{.RelPermalink}}">
+  {{- with (.Resources.GetMatch "cover.*") }} 
+    {{- $img := . | images.Filter (images.Overlay (resources.GetMatch "image/watermark.*") 0 0 )}}
+    {{- $img := $img.Resize "400x webp" }}
+    <img loading="lazy" src="{{$img.RelPermalink}}" alt="{{$.Title}}">
+  {{- end }}
+    <h2>{{.Title}}</h2>
+    <div class="price">${{$product.price}}</div>
+    <div class="rating">
+      {{- range (seq $product.rating)}}&starf;{{ end -}}
+      {{- range seq (sub 5 ($product.rating | int))}}&star;{{ end -}}
+    </div>
+  </a>
+  <form>
+    <input type="hidden" name="name" value="{{.Title}}">
+    <div class="colors">
+    {{- range $i, $c := split $product.colors "," }}
+      <label>
+        <input type="radio" name="color" value="{{trim $c " "}}" {{if eq $i 0}}checked{{end}}>
+        <span class="sr-only">{{$c}}</span>
+      </label>
+    {{- end }}
+    </div>
+    <button class="addToCart" type="submit">Add to cart</button>
+  </form>
+</li>
